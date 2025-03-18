@@ -1,5 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Lora&amp;subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&amp;display=swap");
+@font-face {
+  font-family: "Baloo-Semi";
+  src: url("./Baloo2-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baloo-Extra";
+  src: url("./Baloo2-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Domus";
+  src: url("./fonnts.com-Domus_Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   outline: none !important;
 }
@@ -9,7 +25,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.25px;
   margin: 0;
-  font-family: Barlow;
+  font-family: Baloo-Semi, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -44,8 +60,11 @@ a {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 h1 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Extra", serif;
   margin: 0;
+}
+p{
+  font-family: "Domus", serif;
 }
 .bg-light-blue {
   background: #ecf4f8 !important;
@@ -299,7 +318,7 @@ h1 {
 .search-box h3 {
   width: 100%;
   float: left;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 40px;
   color: #000;
   margin-bottom: 20px;
@@ -379,6 +398,7 @@ h1 {
   float: left;
   position: relative;
   margin-bottom: 80px;
+  text-align: center;
 }
 .section-title h2 {
   width: 100%;
@@ -386,7 +406,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 60px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
 }
 .section-title img {
   height: 11px;
@@ -581,7 +601,7 @@ h1 {
 .header-denmark .swiper-slide h2 {
   font-size: 80px;
   color: #fff;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   padding-right: 40%;
   margin-top: 0;
   margin-bottom: 70px;
@@ -699,12 +719,12 @@ h1 {
 }
 .header-norway .inner .content h5 {
   font-size: 40px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   color: #fff;
 }
 .header-norway .inner .content h1 {
   font-size: 80px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   color: #fff;
 }
 .header-norway .inner .content p {
@@ -875,7 +895,7 @@ h1 {
 }
 .header-finland .inner .content h1 {
   font-size: 80px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   color: #fff;
   margin-bottom: 70px;
   padding-right: 40%;
@@ -1051,7 +1071,7 @@ h1 {
 }
 .header-sweden .inner .content h1 {
   font-size: 80px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   color: #fff;
   padding-right: 40%;
   margin-bottom: 70px;
@@ -1194,7 +1214,7 @@ h1 {
 .header-iceland .swiper-slide h2 {
   font-size: 80px;
   color: #fff;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   padding-right: 40%;
   margin-top: 0;
   margin-bottom: 70px;
@@ -1284,7 +1304,7 @@ h1 {
 .find-adventure h3 {
   width: 100%;
   float: left;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 40px;
   color: #000;
   margin-bottom: 50px;
@@ -1371,7 +1391,7 @@ h1 {
 .welcome-intro h4 {
   display: block;
   margin-top: 30px;
-  font-family: "Lora";
+  font-family: "Baloo-Semi";
   font-size: 30px;
 }
 .welcome-intro figure {
@@ -1399,7 +1419,7 @@ h1 {
 }
 .welcome-intro .odometer {
   font-size: 36px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   margin-bottom: 10px;
   display: block;
 }
@@ -1438,6 +1458,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   padding: 100px 0;
+  background-color: #f4fbff;
 }
 .about-us-header .section-title {
   margin-bottom: 0;
@@ -1579,10 +1600,10 @@ h1 {
   display: block;
 }
 .our-history .wrapper .content .inner h4 {
-  font-size: 40px;
-  line-height: 54px;
-  font-family: "Lora", serif;
-  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 32px;
+  font-family: "Baloo-Semi", serif;
+  margin-bottom: 5px;
 }
 .our-history .wrapper .content .inner img {
   height: 11px;
@@ -1590,9 +1611,9 @@ h1 {
   margin-bottom: 40px;
 }
 .our-history .wrapper .content .inner p {
-  font-size: 20px;
-  line-height: 34px;
-  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
   font-weight: 300;
   color: #393c3f;
 }
@@ -1642,7 +1663,7 @@ h1 {
 }
 .milestones .odometer {
   font-size: 36px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
 }
 .team-hero-image {
   width: 100%;
@@ -1928,7 +1949,7 @@ h1 {
   margin-top: 10px;
   font-size: 70px;
   line-height: 80px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
 }
 .blog-header .filter {
   float: left;
@@ -2122,7 +2143,7 @@ h1 {
   font-weight: 500;
 }
 .blog-content .inner .about-author h5 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 40px;
   margin-bottom: 20px;
   margin-top: 11px;
@@ -2136,7 +2157,7 @@ h1 {
   display: block;
 }
 .blog-content .inner h3 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 30px;
   margin: 50px 0;
 }
@@ -2240,7 +2261,7 @@ h1 {
   padding: 150px 0;
 }
 .blog-comments h5 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -2428,7 +2449,7 @@ h1 {
   margin: 0 14px;
 }
 .blog-posts .blog-post-grid .post-content h3 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 26px;
   line-height: 40px;
   padding: 0 6%;
@@ -2506,7 +2527,7 @@ h1 {
   margin: 0 14px;
 }
 .blog-posts .blog-post-list .post-content h3 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 24px;
   margin-bottom: 20px;
   color: black;
@@ -2561,7 +2582,7 @@ h1 {
   padding: 0 10%;
 }
 .subscribe .inner h2 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 55px;
   margin-bottom: 20px;
 }
@@ -2820,7 +2841,7 @@ h1 {
 .tour-box .tour-content h3 {
   display: block;
   font-size: 27px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   margin: 9px 0 0 0;
 }
 .tour-box .tour-content ul {
@@ -2961,7 +2982,7 @@ h1 {
 .tour-box-list .tour-content h3 {
   display: block;
   font-size: 26px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   margin: 10px 0 0 0;
 }
 .tour-box-list .tour-content p {
@@ -3106,7 +3127,7 @@ h1 {
   left: 0;
   bottom: 0;
   z-index: 3;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 24px;
   color: #fff;
   padding: 30px;
@@ -3247,7 +3268,7 @@ h1 {
   z-index: 100;
 }
 .reviews .review h4 {
-  font-family: "Lora";
+  font-family: "Baloo-Semi";
   font-size: 24px;
   display: block;
   margin: 20px 0;
@@ -3338,7 +3359,7 @@ h1 {
   margin: 0 14px;
 }
 .recent-blog .blog-post .post-content h3 {
-  font-family: "Lora";
+  font-family: "Baloo-Semi";
   font-size: 23px;
   margin-bottom: 20px;
   line-height: 40px;
@@ -3427,7 +3448,7 @@ h1 {
   margin: 0 14px;
 }
 .related-blog .blog-post .post-content h3 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 24px;
   margin-bottom: 15px;
   color: black;
@@ -3477,7 +3498,7 @@ h1 {
 .checkout-header h2 {
   font-size: 70px;
   color: #000;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   margin-bottom: 50px;
   margin-top: 7px;
 }
@@ -3541,7 +3562,7 @@ h1 {
   font-weight: 500;
 }
 .steps h5 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 30px;
   color: #000;
   margin-bottom: 36px;
@@ -4063,7 +4084,7 @@ h1 {
 }
 .checkout .summary .summary-head h3 {
   font-size: 30px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   margin-top: 35px;
 }
 .checkout .summary .summary-head span {
@@ -4290,7 +4311,7 @@ h1 {
   font-size: 16px;
 }
 .tours-header h2 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 70px;
   margin-bottom: 30px;
 }
@@ -4548,7 +4569,7 @@ h1 {
   font-size: 16px;
 }
 .tour-single-header h2 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 70px;
   margin-bottom: 60px;
 }
@@ -4828,7 +4849,7 @@ h1 {
   left: 0;
   bottom: 0;
   z-index: 3;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 24px;
   color: #fff;
   padding: 30px;
@@ -4941,7 +4962,7 @@ h1 {
   width: 100%;
 }
 .tour-features .feature-box h4 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 30px;
   margin-bottom: 40px;
 }
@@ -5016,7 +5037,7 @@ h1 {
   font-weight: 500;
 }
 .tour-location h3 {
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 40px;
   margin: 10px 0 20px 0;
 }
@@ -5238,7 +5259,7 @@ h1 {
 .tour-information h3 {
   display: block;
   margin-bottom: 20px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 30px;
 }
 .tour-information p {
@@ -5369,7 +5390,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 70px;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
 }
 .attractions-header img {
   height: 11px;
@@ -5514,7 +5535,7 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   color: white;
-  font-family: "Lora", serif;
+  font-family: "Baloo-Semi", serif;
   font-size: 24px;
   color: #fff;
   text-decoration: none;
@@ -5542,9 +5563,11 @@ h1 {
   text-align: center;
 }
 .quote h2 {
-  font-family: "Lora";
-  font-size: 55px;
+  font-family: "Baloo-Semi";
+  font-size: 120px;
   margin-bottom: 27px;
+  text-align: center;
+  color: white;
 }
 .quote img {
   height: 11px;
@@ -5556,7 +5579,7 @@ h1 {
   padding: 0 15%;
   font-size: 20px;
   line-height: 34px;
-  color: #393c3f;
+  color: white;
 }
 .contact {
   width: 100%;
@@ -5625,7 +5648,7 @@ h1 {
   width: 100%;
 }
 .contact .contact-box figure img {
-  width: 98px;
+  width: 64px;
 }
 .contact .contact-box h5 {
   width: 100%;
@@ -5959,7 +5982,7 @@ h1 {
 }
 .footer .social-media li a {
   float: left;
-  color: #afb4b9;
+  color: #ff9019;
   font-size: 30px;
 }
 .footer .social-media li a i {
@@ -5969,7 +5992,7 @@ h1 {
 .footer .social-media li a:hover i[class="fa fa-facebook"] {
   color: #3b5998;
 }
-.footer .social-media li a:hover i[class="fa fa-twitter"] {
+.footer .social-media li a:hover i[class="fa fa-linkedin"] {
   color: #00acee;
 }
 .footer .social-media li a:hover i[class="fa fa-instagram"] {
@@ -6962,5 +6985,38 @@ h1 {
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
   }
+}
+.quote.bg-image {
+    padding: 200px 0;
+    position: relative;
+}
+
+.quote.bg-image h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 80px;
+}
+
+.quote.bg-image p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.quote.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.quote.bg-image * {
+    position: relative;
+    z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

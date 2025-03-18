@@ -203,17 +203,72 @@
   }
 }
 
+/* Modal Styles */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    border-bottom: 2px solid #ff9019;
+    background-color: #f8f9fa;
+}
+
+.modal-title {
+    color: #333;
+    font-weight: 700;
+}
+
+.modal-body {
+    padding: 25px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-body p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+}
+
+.modal-body li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.modal-body strong {
+    color: #ff9019;
+}
+
+/* Custom scrollbar for modal */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #ff9019;
+    border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #e67f0d;
+}
 
   </style>
 </head>
 
 <body>
-  <div class="preloader">
-    <svg class="spinner" viewBox="0 0 50 50">
-      <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-    </svg>
-  </div>
-  <!-- end preloader -->
   <div class="search-box">
     <div class="container">
       <div class="row">
@@ -242,75 +297,29 @@
     <!-- end container -->
   </div>
   <!-- end search-box -->
-  <header class="header-denmark">
+  <header class="header-int">
     <div class="container">
-      <nav class="navbar"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png" alt="Image"></a>
-
-        <div class="menu-btn">
-          <div class="menu-circle-wrap">
-            <div class="wave"></div>
-            <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
+      <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png" alt="Image"></a>
+          <div class="menu-btn">
+            <div class="menu-circle-wrap">
+              <div class="wave"></div>
+              <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
               <path d="M1,26a25,25 0 1,0 50,0a25,25 0 1,0 -50,0"></path>
-            </svg>
+              </svg> </div>
+            <div class="bars">
+              <div class="bar b1"></div>
+              <div class="bar b2"></div>
+              <div class="bar b3"></div>
+            </div>
           </div>
-          <div class="bars">
-            <div class="bar b1"></div>
-            <div class="bar b2"></div>
-            <div class="bar b3"></div>
-          </div>
-        </div>
-        <!-- end menu-btn -->
-        <ul class="navbar-nav">
+          <!-- end menu-btn -->        <ul class="navbar-nav">
           <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
-            <!--<ul class="dropdown-menu">
-              <li><a href="index-denmark.html">DENMARK</a></li>
-              <li><a href="index-norway.html">NORWAY</a></li>
-              <li><a href="index-finland.html">FINLAND</a></li>
-              <li><a href="index-sweden.html">SWEDEN</a></li>
-              <li><a href="index-iceland.html">ICELAND</a></li>
-            </ul>-->
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
-            <!--<ul class="dropdown-menu">
-              <li><a>TOUR</a>
-                <ul class="sub-dropdown-menu">
-                  <li><a href="tours-grid.html">TOUR GRID</a></li>
-                  <li><a href="tours-list.html">TOUR LIST</a></li>
-                  <li><a href="">TOUR SINGLE</a></li>
-                </ul>
-              </li>
-              <li><a>ABOUT US</a>
-                <ul class="sub-dropdown-menu">
-                  <li><a href="about-us.html">ABOUT US</a></li>
-                  <li><a href="our-team.html">OUR TEAM</a></li>
-                </ul>
-              </li>
-              <li><a>BLOG</a>
-                <ul class="sub-dropdown-menu">
-                  <li><a href="blog-grid.html">BLOG POST GRID</a></li>
-                  <li><a href="blog-list.html">BLOG POST LIST</a></li>
-                  <li><a href="blog-single.html">BLOG POST SINGLE</a></li>
-                </ul>
-              </li>
-            </ul>-->
           </li>
-          <li class="nav-item dropdown"><a class="nav-link" href="">PACKAGES</a>
-            <!--<ul class="dropdown-menu">
-              <li><a href="attractions-4cols.html">FOUR COLUMNS</a></li>
-              <li><a href="attractions-3cols.html">THREE COLUMNS</a></li>
-              <li><a href="attractions-2cols.html">TWO COLUMNS</a></li>
-              <li><a href="attractions-single.html">SINGLE PAGE</a></li>
-            </ul>-->
+          <li class="nav-item dropdown"><a class="nav-link" href="packages.html">PACKAGES</a>
           </li>
-          <li class="nav-item dropdown"><a class="nav-link" href="blog-grid.html">BLOG</a>
-            <!--<ul class="dropdown-menu">
-              <li><a href="passengers.html">PASSGENGER</a></li>
-              <li><a href="booking.html">BOOKING</a></li>
-              <li><a href="summary.html">SUMMARY</a></li>
-              <li><a href="payment.html">PAYMENT</a></li>
-            </ul>-->
-          </li>
+          <li class="nav-item dropdown"><a class="nav-link" href="blog.html">BLOG</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
@@ -319,16 +328,8 @@
     <!-- end container -->
   </header>
   <!-- end header -->
-
-    <!-- Service Details Popup -->
-    <div class="service-popup" id="servicePopup">
-      <div class="service-popup__content">
-          <span class="service-popup__close">&times;</span>
-          <h2 class="service-popup__title"></h2>
-          <div class="service-popup__description"></div>
-      </div>
   </div>
-
+  
   <section class="popular-tours">
     <div class="container">
       <div class="row">
@@ -350,22 +351,9 @@
           <div class="tour-box">
             <figure><img src="images/Packages/family.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Family Tour Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
-            </div>
+              <h3 class="tour-title">Family Tour Packages</h3>
+              <a href="#" class="explore-more" data-package="Family Tour Packages">EXPLORE MORE</a>
+          </div>
             <!-- end tour-content -->
           </div>
           <!-- end tour-box -->
@@ -375,21 +363,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/camp'.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Beach Camping </h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+              <h3 class="tour-title">Beach Camping</h3>
+              <a href="#" class="explore-more" data-package="Beach Camping Experiences">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -400,21 +375,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/honeymoon.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Honeymoon Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+              <h3 class="tour-title">Honeymoon Packages</h3>
+              <a href="#" class="explore-more" data-package="Honeymoon Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -424,22 +386,9 @@
         <div class="col-lg-3">
           <div class="tour-box">
             <figure><img src="images/Packages/yoga.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3>Yoga Packages </h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+            <div class="tour-content"> 
+              <h3 class="tour-title">Yoga Packages</h3>
+              <a href="#" class="explore-more" data-package="Yoga Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -450,21 +399,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/nature.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Nature Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> < img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+              <h3 class="tour-title">Nature Packages</h3>
+              <a href="#" class="explore-more" data-package="Nature Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -475,21 +411,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/group.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Group Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+              <h3 class="tour-title">Group Packages</h3>
+              <a href="#" class="explore-more" data-package="Group Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -500,21 +423,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/trekking.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3>Trekking Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
-              <a href="">EXPLORE MORE</a>
+              <h3 class="tour-title">Trekking Packages</h3>
+              <a href="#" class="explore-more" data-package="Trekking Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -608,11 +518,11 @@
         <div class="col-lg-4 col-md-4">
           <h5>ABOUT US</h5>
           <ul class="footer-menu">
-            <li><a href="#">Homes</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Homes</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <!-- <li><a href="blog">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <!-- end col-3 -->
@@ -690,18 +600,36 @@
 
     })(jQuery)
   </script>
-  <script src="../../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    <!-- Replace the existing script tags with these -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
 
-  <script src="gfxpartner.com\Frolic\js\packagedetails.js"></script>
+  <script src="./js/packagedetails.js"></script>
+
+
+    <!-- Add before closing body tag -->
+  <div class="modal fade" id="packageModal" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
