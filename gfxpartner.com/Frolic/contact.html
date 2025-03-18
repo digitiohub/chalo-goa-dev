@@ -25,12 +25,6 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="preloader">
-  <svg class="spinner" viewBox="0 0 50 50">
-    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-  </svg>
-</div>
-<!-- end preloader -->
 <div class="search-box">
   <div class="container">
     <div class="row">
@@ -61,33 +55,35 @@
 <!-- end search-box -->
 <header class="header-int">
   <div class="container">
-    <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/logo-dark.png" alt="Image"></a>
-        <div class="menu-btn">
-          <div class="menu-circle-wrap">
-            <div class="wave"></div>
-            <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
+    <nav class="navbar"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png" alt="Image"></a>
+
+      <div class="menu-btn">
+        <div class="menu-circle-wrap">
+          <div class="wave"></div>
+          <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
             <path d="M1,26a25,25 0 1,0 50,0a25,25 0 1,0 -50,0"></path>
-            </svg> </div>
-          <div class="bars">
-            <div class="bar b1"></div>
-            <div class="bar b2"></div>
-            <div class="bar b3"></div>
-          </div>
+          </svg>
         </div>
-        <!-- end menu-btn -->
-     <span class="search-btn"><i class="fa fa-search"></i></span>
+        <div class="bars">
+          <div class="bar b1"></div>
+          <div class="bar b2"></div>
+          <div class="bar b3"></div>
+        </div>
+      </div>
+      <!-- end menu-btn -->
       <ul class="navbar-nav">
-        <li class="nav-item dropdown"><a class="nav-link">HOME</a>
-          <ul class="dropdown-menu">
+        <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
+          <!--<ul class="dropdown-menu">
             <li><a href="index-denmark.html">DENMARK</a></li>
             <li><a href="index-norway.html">NORWAY</a></li>
             <li><a href="index-finland.html">FINLAND</a></li>
             <li><a href="index-sweden.html">SWEDEN</a></li>
             <li><a href="index-iceland.html">ICELAND</a></li>
-          </ul>
+          </ul>-->
         </li>
-        <li class="nav-item dropdown"><a class="nav-link">PAGES</a>
-          <ul class="dropdown-menu">
+        <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
+          <!--<ul class="dropdown-menu">
             <li><a>TOUR</a>
               <ul class="sub-dropdown-menu">
                 <li><a href="tours-grid.html">TOUR GRID</a></li>
@@ -108,23 +104,23 @@
                 <li><a href="blog-single.html">BLOG POST SINGLE</a></li>
               </ul>
             </li>
-          </ul>
+          </ul>-->
         </li>
-        <li class="nav-item dropdown"><a class="nav-link">ATTRACTIONS</a>
-          <ul class="dropdown-menu">
+        <li class="nav-item dropdown"><a class="nav-link" href="">PACKAGES</a>
+          <!--<ul class="dropdown-menu">
             <li><a href="attractions-4cols.html">FOUR COLUMNS</a></li>
             <li><a href="attractions-3cols.html">THREE COLUMNS</a></li>
             <li><a href="attractions-2cols.html">TWO COLUMNS</a></li>
             <li><a href="attractions-single.html">SINGLE PAGE</a></li>
-          </ul>
+          </ul>-->
         </li>
-        <li class="nav-item dropdown"><a class="nav-link">CHECKOUT</a>
-          <ul class="dropdown-menu">
+        <li class="nav-item dropdown"><a class="nav-link" href="blog-grid.html">BLOG</a>
+          <!--<ul class="dropdown-menu">
             <li><a href="passengers.html">PASSGENGER</a></li>
             <li><a href="booking.html">BOOKING</a></li>
             <li><a href="summary.html">SUMMARY</a></li>
             <li><a href="payment.html">PAYMENT</a></li>
-          </ul>
+          </ul>-->
         </li>
         <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
       </ul>
@@ -134,6 +130,9 @@
   <!-- end container -->
 </header>
 <!-- end header-int -->
+
+
+
 <section class="contact">
 <div class="content">
 	<div class="container">
@@ -141,7 +140,7 @@
       <div class="col-12">
       <div class="section-title page-title">
           <h2>Contact Us</h2>
-          <img src="images/title-seperator.png" alt="Image"> </div>
+      </div>
         <!-- end section-title -->
        </div>
       <!-- end col-12 -->
@@ -151,16 +150,60 @@
   <!-- end container -->
   </div>
   <!-- end content -->
-  <div class="contact-hero-image bg-image" data-background="images/contact-hero.jpg"></div>
   <!-- end map -->
+
+  <section class="contact-form">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+        <div class="section-title">
+          <h2>Write Us a Message</h2>
+        </div>
+        <!-- end section-title -->
+        </div>
+        <!-- end col-12 -->
+        <div class="col-lg-8 col-md-10">
+          <form class="row">
+            <div class="form-group col-md-6">
+              <input type="text" placeholder="Full name">
+            </div>
+            <!-- end form-group -->
+            <div class="form-group col-md-6">
+              <input type="text" placeholder="Email Adress">
+            </div>
+            <!-- end form-group -->
+            <div class="form-group col-md-6">
+              <input type="text" placeholder="Phone">
+            </div>
+            <!-- end form-group -->
+            <div class="form-group col-md-6">
+              <input type="text" placeholder="Subject">
+            </div>
+            <!-- end form-group -->
+            <div class="form-group col-12">
+          <textarea placeholder="Your Message"></textarea>
+            </div>
+            <!-- end form-group -->
+            <div class="form-group col-12 text-center">
+          <button type="submit">SEND MESSAGE</button>
+            </div>
+            <!-- end form-group -->
+          </form>
+        </div>
+        <!-- end col-8 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  
   <div class="content">
 	<div class="container">
     <div class="row no-gutters">
       <div class="col-12">
       <div class="section-title">
-          <h2>Office Locations</h2>
+          <h2>Reach Us Out</h2>
           <img src="images/title-seperator.png" alt="Image"> </div>
-        <!-- end section-title -->
         <p>Pellentesque vestibulum fermentum velit non placerat aecenas in hendrerit justo quisque quis rhoncus exeget semper semlam at lobortis velit. Vestibulum ante ipsum primis in faucibus orcie luctus et ultrices posuere cubilia curae ed dignissim leo lorema intum mauris vestibulum et maecenas vitae urna aced magna facilisis porttitor.</p>
        </div>
       <!-- end col-12 -->
@@ -339,19 +382,19 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-4">
+      <div class="col-lg-4 col-md-4">
         <h5>ABOUT US</h5>
         <ul class="footer-menu">
+          <li><a href="#">Homes</a></li>
           <li><a href="#">About us</a></li>
-          <li><a href="#">Training & Safety</a></li>
-          <li><a href="#">Our Guides</a></li>
-          <li><a href="#">Office Team</a></li>
+          <li><a href="#">Packages</a></li>
           <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <!-- end col-3 -->
-      <div class="col-lg-3 col-md-4">
-        <h5>USEFUL INFO</h5>
+      <div class="col-lg-4 col-md-4">
+        <h5>PACKAGES</h5>
         <ul class="footer-menu">
           <li><a href="#">Pickup Locations</a></li>
           <li><a href="#">Terms of Payment</a></li>
@@ -361,47 +404,31 @@
         </ul>
       </div>
       <!-- end col-3 -->
-      <div class="col-lg-3 col-md-4">
+      <div class="col-lg-4 col-md-4">
         <h5>CONTACT US</h5>
         <address>
-        GFXPARTNER INC.<br>
-        30 Aarhus, Denmark<br>
-        Phone: 123 456 7890<br>
-        <a href="#"><span class="__cf_email__" data-cfemail="cea7a0a8a18ea9a8b6beafbcbaa0abbce0ada1a3">[email&#160;protected]</span></a>
+          <i class="fa fa-map-marker"></i> WeWork Chromium Jogeshwari <br>Link Road, Powai, Mumbai, <br>Maharashtra, India
         </address>
+        <div class="contact-info">
+          <p><i class="fa fa-envelope"></i> hello@thesafarisutra.com</p>
+          <p><i class="fa fa-envelope"></i> sales@thesafarisutra.com</p>
+          <p><i class="fa fa-phone"></i> 9967572970</p>
+          <p><i class="fa fa-phone"></i> +919429690981</p>
+        </div>
       </div>
       <!-- end col-3 -->
-      <div class="col-lg-3">
-        <h5>LANGUAGE & CURRENCY</h5>
-        <div class="language dropdown selectdrop"> <a href="#" data-toggle="dropdown" class="selection">English <span>(United States)</span><span class="arrow"><i class="fa fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li><a>Portugues <span>(Brazil)</span></a></li>
-            <li><a>Spanish <span>(Mexican)</span></a></li>
-            <li><a>French <span>(France)</span></a></li>
-          </ul>
-        </div>
-        <!-- end language -->
-        <div class="currency dropdown selectdrop"> <a href="#" data-toggle="dropdown" class="selection">USD<span class="arrow"><i class="fa fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li><a>EUR</a></li>
-            <li><a>TRY</a></li>
-            <li><a>RUB</a></li>
-          </ul>
-        </div>
-        <!-- end currency -->
       </div>
       <!-- end col-3 -->
       <div class="col-12">
         <ul class="social-media">
-          <li><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/SafariSutra"><i class="fa fa-tripadvisor"></i></a></li>
+          <li><a href="https://www.instagram.com/safarisutra/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa fa-facebook"></i></a></li>
         </ul>
       </div>
       <!-- end col-12 -->
-      <div class="col-12"> <span class="copyright">&copy; GFXPARTNER</span> </div>
+      <div class="col-12"> <span class="copyright">&copy; Safari Sutra Holidays</span> </div>
       <!-- end col-12 -->
     </div>
     <!-- end row -->

@@ -3257,15 +3257,16 @@ h1 {
 }
 .reviews .review p {
   font-weight: 300;
-  line-height: 30px;
+  line-height: 20px;
   color: #393c3f;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 30px;
   z-index: 100;
 }
 .reviews .review figure {
-  display: block;
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 .reviews .review figure img {
   width: 80px;
@@ -5581,6 +5582,7 @@ h1 {
 }
 .contact .section-title {
   margin-bottom: 40px;
+  margin-top: 50px;
 }
 .contact p {
   font-weight: 300;
