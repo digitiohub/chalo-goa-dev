@@ -2675,7 +2675,7 @@ p{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 150px 0;
+  padding-top: 150px;
   background: #f4fbff;
 }
 .popular-tours .section-desc {
@@ -3089,6 +3089,7 @@ p{
 }
 .adventure-activities .container {
   margin: 0;
+  /* overflow: visible !important; */
 }
 .adventure-activities .section-desc {
   color: #393c3f;
