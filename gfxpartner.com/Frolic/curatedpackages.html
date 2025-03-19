@@ -40,10 +40,10 @@
 }
 
 .section-title h2 {
-    font-size: 70px;
-    font-weight: 500;
-    color: #333;
+  font-size: 70px;
 }
+
+
 /* Left side content */
 .content {
   flex: 1;
@@ -332,6 +332,25 @@
     border-color: #ff9019;
     color: white;
 }
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 54px;
+    color: #333;
+    margin-bottom: 60px; /* Increased spacing between h2 and h1 */
+    font-weight: 600;
+}
+
+.section-title .location-heading {
+    font-size: 48px;
+    color: #ff9019;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
   </style>
 </head>
 
@@ -379,16 +398,17 @@
               <div class="bar b3"></div>
             </div>
           </div>
-          <!-- end menu-btn -->        <ul class="navbar-nav">
+          <!-- end menu-btn -->       
+         <ul class="navbar-nav">
           <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="packages.html">PACKAGES</a>
             <ul class="dropdown-menu">
-              <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
-              <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
-            </ul>
+                <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
+                <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
+              </ul>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="blog.html">BLOG</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -400,25 +420,22 @@
   </header>
   <!-- end header -->
   </div>
-        <section class="popular-tours">
-          <div class="container">
-            <div class="row">
-                <div class="section-title">
-                  <h2>Indulge in the Extraordinary!</h2>
-                  <!-- <img src="images/title-seperator.png" alt="Image"> -->
-                <!-- end section-title -->
-              </div>
-              <!-- end col-6 -->
-                <!-- <p class="section-desc">Dive into the heart of Goa with our specially curated travel packages. Whether you're seeking adventure, relaxation, culture, or a bit of everything, we have the perfect plan for you. From sun-kissed beaches and thrilling watersports to heritage trails and vibrant nightlife, experience Goa like never before.<br><br>
-                  Pick your ideal getaway, sit back, and let us handle the details—so you can simply enjoy the magic of Goa! 🌴✨
-                </p> -->
-              <!-- end col-6 -->
-        <!-- end col-6 -->
-        <div class="col-lg-3">
+  
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+          <div class="section-title">
+            <h2>Handpicked Experiences, Perfectly Yours!</h2>
+            <h1 class="location-heading">NORTH GOA</h1>
+        </div>
+
+    
+        <div class="col-lg-4 col-md-4">
           <div class="tour-box">
-            <figure><img src="images/Packages/family.jpg" alt="Image"></figure>
+            <figure><img src="images/Packages/north goa/1.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3 class="tour-title">Family Tour Packages</h3>
+              <h3 class="tour-title">North Goa Beach Bliss Expedition
+              </h3>
               <a href="#" class="explore-more" data-package="Family Tour Packages">EXPLORE MORE</a>
           </div>
             <!-- end tour-content -->
@@ -426,11 +443,11 @@
           <!-- end tour-box -->
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-4">
           <div class="tour-box">
-            <figure><img src="images/Packages/camp'.jpg" alt="Image"></figure>
+            <figure><img src="images/Packages/north goa/2.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3 class="tour-title">Beach Camping</h3>
+              <h3 class="tour-title">Hippie Trail Heritage Tour</h3>
               <a href="#" class="explore-more" data-package="Beach Camping Experiences">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -438,11 +455,12 @@
           <!-- end tour-box -->
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-4">
           <div class="tour-box">
-            <figure><img src="images/Packages/honeymoon.jpg" alt="Image"></figure>
+            <figure><img src="images/Packages/north goa/3.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3 class="tour-title">Honeymoon Packages</h3>
+              <h3 class="tour-title">Fort to Fort North Goa Heritage Trail
+              </h3>
               <a href="#" class="explore-more" data-package="Honeymoon Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -450,11 +468,12 @@
           <!-- end tour-box -->
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
           <div class="tour-box">
-            <figure><img src="images/Packages/yoga.jpg" alt="Image"></figure>
+            <figure><img src="images/Packages/north goa/4.jpg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3 class="tour-title">Yoga Packages</h3>
+              <h3 class="tour-title">Nightlife Elite - Goa After Dark
+              </h3>
               <a href="#" class="explore-more" data-package="Yoga Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -462,49 +481,86 @@
           <!-- end tour-box -->
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-4">
           <div class="tour-box">
-            <figure><img src="images/Packages/nature.jpg" alt="Image"></figure>
+            <figure><img src="images/Packages/north goa/5.jpeg" alt="Image"></figure>
             <div class="tour-content"> 
-              <h3 class="tour-title">Nature Packages</h3>
+              <h3 class="tour-title">North Goa Wellness Escape
+              </h3>
               <a href="#" class="explore-more" data-package="Nature Packages">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
           <!-- end tour-box -->
         </div>
-        <!-- end col-3 -->
-        <div class="col-lg-3">
-          <div class="tour-box">
-            <figure><img src="images/Packages/group.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
-              <h3 class="tour-title">Group Packages</h3>
-              <a href="#" class="explore-more" data-package="Group Packages">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        <!-- end col-3 -->
-         <div class="col-lg-3">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
-              <h3 class="tour-title">Trekking Packages</h3>
-              <a href="#" class="explore-more" data-package="Trekking Packages">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        
-        <!-- end col-12 -->
       </div>
       <!-- end row -->
     </div>
     <!-- end container -->
+
+    
   </section>
   <!-- end popular-tours -->
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+          <div class="section-title">
+            <h1 class="location-heading">SOUTH GOA</h1>
+        </div>
+    
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/south goa/1.jpg" alt="Image"></figure>
+            <div class="tour-content"> 
+              <h3 class="tour-title">South Goa Serenity Tour</h3>
+              <a href="#" class="explore-more" data-package="South Goa Serenity">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/south goa/2.jpg" alt="Image"></figure>
+            <div class="tour-content"> 
+              <h3 class="tour-title">Hidden Beach Explorer</h3>
+              <a href="#" class="explore-more" data-package="Hidden Beach Explorer">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/south goa/3.jpg" alt="Image"></figure>
+            <div class="tour-content"> 
+              <h3 class="tour-title">Portuguese Heritage Trail</h3>
+              <a href="#" class="explore-more" data-package="Portuguese Heritage">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
+          <div class="tour-box">
+            <figure><img src="images/Packages/south goa/4.jpg" alt="Image"></figure>
+            <div class="tour-content"> 
+              <h3 class="tour-title">Luxury Resort Retreat</h3>
+              <a href="#" class="explore-more" data-package="Luxury Resort">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/south goa/5.jpg" alt="Image"></figure>
+            <div class="tour-content"> 
+              <h3 class="tour-title">Spice Plantation Discovery</h3>
+              <a href="#" class="explore-more" data-package="Spice Plantation">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
