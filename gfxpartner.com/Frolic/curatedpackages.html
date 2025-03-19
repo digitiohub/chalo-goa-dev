@@ -13,353 +13,356 @@
   <meta name="keywords"
     content="tour, ice, trip, travel, agency, life, vacation, treking, boat, walking, climbing, transition, svg, html, css">
 
-  <!-- FAVICON FILES -->
-  <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-  <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-  <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-  <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-  <link href="ico/favicon.png" rel="shortcut icon">
-
   <!-- CSS FILES -->
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/daterangepicker.css">
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-<style>
-    
-.about-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 0 80px;
-  background-color: #f5f5f5;
-}
+  <style>
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 80px;
+      background-color: #f5f5f5;
+    }
 
-.section-title h2 {
-  font-size: 70px;
-}
+    .section-title h2 {
+      font-size: 70px;
+    }
 
 
-/* Left side content */
-.content {
-  flex: 1;
-  padding: 50px;
-}
+    /* Left side content */
+    .content {
+      flex: 1;
+      padding: 50px;
+    }
 
-.content h1 {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.2;
-}
+    .content h1 {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
 
-.content p {
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 20px 0;
-}
+    .content p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
 
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border: 2px solid black;
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 6px;
-  text-align: center;
-  color: #7c838b;
-  font-weight: 700;
-  margin-top: 30px;
-}
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid black;
+      color: black;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-align: center;
+      color: #7c838b;
+      font-weight: 700;
+      margin-top: 30px;
+    }
 
-.btn:hover {
-  background: #ff9019;
-  border-color: #ff9019;
-  color: #fff;
-  text-decoration: none;
-}
+    .btn:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: #fff;
+      text-decoration: none;
+    }
 
-/* Right side image */
-.image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    /* Right side image */
+    .image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-.image img {
-  width: 60%;
-  height: 40%;
-}
+    .image img {
+      width: 60%;
+      height: 40%;
+    }
 
-/* Contact Section */
-.contact-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-  overflow: hidden;
-}
+    /* Contact Section */
+    .contact-section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      overflow: hidden;
+    }
 
-.contact-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/Packages/contactbg.jpg'); /* Add background image */
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px); /* Adjust the blur level as needed */
-  z-index: -1; /* Ensure the pseudo-element is behind the content */
-}
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/Packages/contactbg.jpg');
+      /* Add background image */
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      /* Adjust the blur level as needed */
+      z-index: -1;
+      /* Ensure the pseudo-element is behind the content */
+    }
 
-/* Form Container */
-.form-container {
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 900px;
-  z-index: 1; /* Ensure the form container is above the pseudo-element */
-}
+    /* Form Container */
+    .form-container {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1;
+      /* Ensure the form container is above the pseudo-element */
+    }
 
-/* Form Header */
-.form-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    /* Form Header */
+    .form-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.form-header h2 {
-  font-size: 28px;
-  color: #333333;
-  margin-bottom: 10px;
-}
+    .form-header h2 {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
 
-.form-header p {
-  color: #777777;
-  font-size: 16px;
-}
+    .form-header p {
+      color: #777777;
+      font-size: 16px;
+    }
 
-/* Form Group */
-.form-group {
-  margin-bottom: 20px;
-}
+    /* Form Group */
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-.form-group label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #555555;
-}
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #555555;
+    }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #333333;
-  transition: border-color 0.3s;
-}
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333333;
+      transition: border-color 0.3s;
+    }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #00aaff;
-  outline: none;
-}
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #00aaff;
+      outline: none;
+    }
 
-/* Submit Button */
-.submit-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border: 2px solid black;
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 6px;
-  text-align: center;
-  color: #7c838b;
-  font-weight: 700;
-  margin-top: 30px;
-}
+    /* Submit Button */
+    .submit-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid black;
+      color: black;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-align: center;
+      color: #7c838b;
+      font-weight: 700;
+      margin-top: 30px;
+    }
 
-.submit-btn:hover {
-  background: #ff9019;
-  border-color: #ff9019;
-  color: #fff;
-  text-decoration: none;
-}
+    .submit-btn:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: #fff;
+      text-decoration: none;
+    }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .form-container {
-    padding: 20px;
-  }
-}
+    /* Responsive */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+    }
 
-/* Modal Styles */
-.modal-content {
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+    /* Modal Styles */
+    .modal-content {
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
 
-.modal-header {
-    border-bottom: 2px solid #ff9019;
-    background-color: #f8f9fa;
-}
+    .modal-header {
+      border-bottom: 2px solid #ff9019;
+      background-color: #f8f9fa;
+    }
 
-.modal-title {
-    color: #333;
-    font-weight: 700;
-}
+    .modal-title {
+      color: #333;
+      font-weight: 700;
+    }
 
-.modal-body {
-    padding: 25px;
-    max-height: 70vh;
-    overflow-y: auto;
-}
+    .modal-body {
+      padding: 25px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
 
-.modal-body p {
-    line-height: 1.6;
-    color: #555;
-}
+    .modal-body p {
+      line-height: 1.6;
+      color: #555;
+    }
 
-.modal-body ul {
-    padding-left: 20px;
-}
+    .modal-body ul {
+      padding-left: 20px;
+    }
 
-.modal-body li {
-    margin-bottom: 10px;
-    color: #666;
-}
+    .modal-body li {
+      margin-bottom: 10px;
+      color: #666;
+    }
 
-.modal-footer {
-    border-top: 1px solid #dee2e6;
-}
+    .modal-footer {
+      border-top: 1px solid #dee2e6;
+    }
 
-.modal-body strong {
-    color: #ff9019;
-}
+    .modal-body strong {
+      color: #ff9019;
+    }
 
-/* Custom scrollbar for modal */
-.modal-body::-webkit-scrollbar {
-    width: 8px;
-}
+    /* Custom scrollbar for modal */
+    .modal-body::-webkit-scrollbar {
+      width: 8px;
+    }
 
-.modal-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
+    .modal-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
 
-.modal-body::-webkit-scrollbar-thumb {
-    background: #ff9019;
-    border-radius: 4px;
-}
+    .modal-body::-webkit-scrollbar-thumb {
+      background: #ff9019;
+      border-radius: 4px;
+    }
 
-.modal-body::-webkit-scrollbar-thumb:hover {
-    background: #e67f0d;
-}
-.location-packages {
-    margin-top: 30px;
-}
+    .modal-body::-webkit-scrollbar-thumb:hover {
+      background: #e67f0d;
+    }
 
-.location-box {
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
-}
+    .location-packages {
+      margin-top: 30px;
+    }
 
-.location-box:hover {
-    transform: translateY(-5px);
-}
+    .location-box {
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
 
-.location-box figure {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+    .location-box:hover {
+      transform: translateY(-5px);
+    }
 
-.location-box figure img {
-    width: 350px;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
+    .location-box figure {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-.location-box figure:hover img {
-    transform: scale(1.05);
-}
+    .location-box figure img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
 
-.location-box figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: white;
-}
+    .location-box figure:hover img {
+      transform: scale(1.05);
+    }
 
-.location-box figcaption h3 {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+    .location-box figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      color: white;
+    }
 
-.location-box .explore-more {
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
-    border: 1px solid white;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
+    .location-box figcaption h3 {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
-.location-box .explore-more:hover {
-    background: #ff9019;
-    border-color: #ff9019;
-    color: white;
-}
-.section-title {
-    text-align: center;
-}
+    .location-box .explore-more {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      border: 1px solid white;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
 
-.section-title h2 {
-    font-size: 54px;
-    color: #333;
-    margin-bottom: 50px; /* Reduced from 60px */
-    font-weight: 600;
-}
+    .location-box .explore-more:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: white;
+    }
 
-.section-title .location-heading {
-    font-size: 48px;
-    color: #ff9019;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 30px 0; /* Reduced margin */
-    letter-spacing: 2px;
-}
+    .section-title {
+      text-align: center;
+    }
 
-.popular-tours {
-    padding: 30px 0; /* Reduced from default padding */
-    margin-bottom: 0; /* Remove bottom margin */
-}
+    .section-title h2 {
+      font-size: 54px;
+      color: #333;
+      margin-bottom: 50px;
+      /* Reduced from 60px */
+      font-weight: 600;
+    }
 
-.tour-box {
-    margin-bottom: 20px; /* Reduced from 30px */
-}
+    .section-title .location-heading {
+      font-size: 48px;
+      color: #ff9019;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 30px 0;
+      /* Reduced margin */
+      letter-spacing: 2px;
+    }
+
+    .popular-tours {
+      padding: 30px 0;
+      /* Reduced from default padding */
+      margin-bottom: 0;
+      /* Remove bottom margin */
+    }
+
+    .tour-box {
+      margin-bottom: 20px;
+      /* Reduced from 30px */
+    }
   </style>
 </head>
 
@@ -394,30 +397,33 @@
   <!-- end search-box -->
   <header class="header-int">
     <div class="container">
-      <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png" alt="Image"></a>
-          <div class="menu-btn">
-            <div class="menu-circle-wrap">
-              <div class="wave"></div>
-              <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
+      <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png"
+            alt="Image"></a>
+        <div class="menu-btn">
+          <div class="menu-circle-wrap">
+            <div class="wave"></div>
+            <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
               <path d="M1,26a25,25 0 1,0 50,0a25,25 0 1,0 -50,0"></path>
-              </svg> </div>
-            <div class="bars">
-              <div class="bar b1"></div>
-              <div class="bar b2"></div>
-              <div class="bar b3"></div>
-            </div>
+            </svg>
           </div>
-          <!-- end menu-btn -->       
-         <ul class="navbar-nav">
+          <div class="bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+          </div>
+        </div>
+        <!-- end menu-btn -->
+        <ul class="navbar-nav">
           <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="packages.html">PACKAGES</a>
             <ul class="dropdown-menu">
-                <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
-                <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
-              </ul>
+              <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
+              <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="blog.html">BLOG</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -429,24 +435,24 @@
   </header>
   <!-- end header -->
   </div>
-  
+
   <section class="popular-tours">
     <div class="container">
       <div class="row">
-          <div class="section-title">
-            <h2>Handpicked Experiences, Perfectly Yours!</h2>
-            <h1 class="location-heading">NORTH GOA</h1>
+        <div class="section-title">
+          <h2>Handpicked Experiences, Perfectly Yours!</h2>
+          <h1 class="location-heading">NORTH GOA</h1>
         </div>
 
-    
+
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/north goa/1.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">North Goa Beach Bliss Expedition
               </h3>
-              <a href="#" class="explore-more" data-package="Family Tour Packages">EXPLORE MORE</a>
-          </div>
+              <a href="#" class="explore-more" data-package="North Goa Beach Bliss Expedition">EXPLORE MORE</a>
+            </div>
             <!-- end tour-content -->
           </div>
           <!-- end tour-box -->
@@ -455,7 +461,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/north goa/2.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Hippie Trail Heritage Tour</h3>
               <a href="#" class="explore-more" data-package="Beach Camping Experiences">EXPLORE MORE</a>
             </div>
@@ -467,7 +473,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/north goa/3.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Fort to Fort North Goa Heritage Trail
               </h3>
               <a href="#" class="explore-more" data-package="Honeymoon Packages">EXPLORE MORE</a>
@@ -480,7 +486,7 @@
         <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
           <div class="tour-box">
             <figure><img src="images/Packages/north goa/4.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Nightlife Elite - Goa After Dark
               </h3>
               <a href="#" class="explore-more" data-package="Yoga Packages">EXPLORE MORE</a>
@@ -493,7 +499,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/north goa/5.jpeg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">North Goa Wellness Escape
               </h3>
               <a href="#" class="explore-more" data-package="Nature Packages">EXPLORE MORE</a>
@@ -507,20 +513,20 @@
     </div>
     <!-- end container -->
 
-    
+
   </section>
   <!-- end popular-tours -->
   <section class="popular-tours">
     <div class="container">
       <div class="row">
-          <div class="section-title">
-            <h1 class="location-heading">SOUTH GOA</h1>
+        <div class="section-title">
+          <h1 class="location-heading">SOUTH GOA</h1>
         </div>
-    
+
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/southgoa/1.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">South Goa Serenity Sojourn
               </h3>
               <a href="#" class="explore-more" data-package="South Goa Serenity">EXPLORE MORE</a>
@@ -531,7 +537,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/southgoa/2.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title"> Colonial Heritage Expedition</h3>
               <a href="#" class="explore-more" data-package="Hidden Beach Explorer">EXPLORE MORE</a>
             </div>
@@ -541,7 +547,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/southgoa/3.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title"> Luxury South Goa Retreat
               </h3>
               <a href="#" class="explore-more" data-package="Portuguese Heritage">EXPLORE MORE</a>
@@ -552,7 +558,7 @@
         <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
           <div class="tour-box">
             <figure><img src="images/Packages/southgoa/4.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Hidden Beaches of South Goa</h3>
               <a href="#" class="explore-more" data-package="Luxury Resort">EXPLORE MORE</a>
             </div>
@@ -562,7 +568,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/southgoa/5.jpeg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title"> Bird Watcher's Paradise</h3>
               <a href="#" class="explore-more" data-package="Spice Plantation">EXPLORE MORE</a>
             </div>
@@ -570,19 +576,19 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="popular-tours">
+  <section class="popular-tours">
     <div class="container">
       <div class="row">
-          <div class="section-title">
-            <h1 class="location-heading">EAST GOA</h1>
+        <div class="section-title">
+          <h1 class="location-heading">EAST GOA</h1>
         </div>
-    
+
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/EAST GOA/1.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Spice Plantation Immersion</h3>
               <a href="#" class="explore-more" data-package="Spice Garden Adventure">EXPLORE MORE</a>
             </div>
@@ -592,7 +598,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/EAST GOA/2.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Dudhsagar Falls Expedition</h3>
               <a href="#" class="explore-more" data-package="Dudhsagar Falls">EXPLORE MORE</a>
             </div>
@@ -602,7 +608,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/EAST GOA/3.jpeg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Ancient Temples of Goa</h3>
               <a href="#" class="explore-more" data-package="Wildlife Sanctuary">EXPLORE MORE</a>
             </div>
@@ -612,7 +618,7 @@
         <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
           <div class="tour-box">
             <figure><img src="images/Packages/EAST GOA/4.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Wild Eastern Goa Safari</h3>
               <a href="#" class="explore-more" data-package="Cultural Village">EXPLORE MORE</a>
             </div>
@@ -622,7 +628,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/EAST GOA/5.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Eastern Goa River Expedition</h3>
               <a href="#" class="explore-more" data-package="Temple Heritage">EXPLORE MORE</a>
             </div>
@@ -630,20 +636,20 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="popular-tours">
+  <section class="popular-tours">
     <div class="container">
       <div class="row">
-          <div class="section-title">
-            <h1 class="location-heading">BEACH-SPECIFIC PACKAGES</h1>
+        <div class="section-title">
+          <h1 class="location-heading">BEACH-SPECIFIC PACKAGES</h1>
         </div>
-    
+
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/beach-specific/1.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
-              <h3 class="tour-title"> Arambol Beach Wellness Retreat              </h3>
+            <div class="tour-content">
+              <h3 class="tour-title"> Arambol Beach Wellness Retreat </h3>
               <a href="#" class="explore-more" data-package="Calangute Beach">EXPLORE MORE</a>
             </div>
           </div>
@@ -652,7 +658,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/beach-specific/2.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Palolem Beach Paradise</h3>
               <a href="#" class="explore-more" data-package="Palolem Beach">EXPLORE MORE</a>
             </div>
@@ -662,7 +668,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/beach-specific/3.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Calangute Beach Club Experience
               </h3>
               <a href="#" class="explore-more" data-package="Vagator Beach">EXPLORE MORE</a>
@@ -673,7 +679,7 @@
         <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
           <div class="tour-box">
             <figure><img src="images/Packages/beach-specific/4.jpg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Morjim Beach Turtle Conservation Retreat</h3>
               <a href="#" class="explore-more" data-package="Anjuna Beach">EXPLORE MORE</a>
             </div>
@@ -683,7 +689,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="tour-box">
             <figure><img src="images/Packages/beach-specific/5.jpeg" alt="Image"></figure>
-            <div class="tour-content"> 
+            <div class="tour-content">
               <h3 class="tour-title">Agonda Beach Romantic Getaway
               </h3>
               <a href="#" class="explore-more" data-package="Baga Beach">EXPLORE MORE</a>
@@ -692,7 +698,7 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -722,7 +728,8 @@
         <div class="col-lg-4 col-md-4">
           <h5>CONTACT US</h5>
           <address>
-            <i class="fa fa-map-marker"></i> WeWork Chromium Jogeshwari <br>Link Road, Powai, Mumbai, <br>Maharashtra, India
+            <i class="fa fa-map-marker"></i> WeWork Chromium Jogeshwari <br>Link Road, Powai, Mumbai, <br>Maharashtra,
+            India
           </address>
           <div class="contact-info">
             <p><i class="fa fa-envelope"></i> hello@thesafarisutra.com</p>
@@ -732,31 +739,52 @@
           </div>
         </div>
         <!-- end col-3 -->
-        </div>
-        <!-- end col-3 -->
-        <div class="col-12">
-          <ul class="social-media">
-            <li><a href="https://x.com/SafariSutra"><i class="fa fa-tripadvisor"></i></a></li>
-            <li><a href="https://www.instagram.com/safarisutra/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa fa-facebook"></i></a></li>
-          </ul>
-        </div>
-        <!-- end col-12 -->
-        <div class="col-12"> <span class="copyright">&copy; Safari Sutra Holidays</span> </div>
-        <!-- end col-12 -->
       </div>
-      <!-- end row -->
+      <!-- end col-3 -->
+      <div class="col-12">
+        <ul class="social-media">
+          <li><a href="https://x.com/SafariSutra"><i class="fa fa-tripadvisor"></i></a></li>
+          <li><a href="https://www.instagram.com/safarisutra/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <!-- end col-12 -->
+      <div class="col-12"> <span class="copyright">&copy; Safari Sutra Holidays</span> </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
     </div>
     <!-- end container -->
   </footer>
 
+  <!-- Add before closing body tag -->
+  <div class="modal fade" id="packageModal" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- JS FILES -->
-  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  <script src="../../code.jquery.com/jquery-3.4.1.min.js"
+  <script data-cfasync="false"
+    src="https://cdn-cgi.com/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="../../cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="../../cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script>
     // PRELOADER
     (function ($) {
@@ -779,39 +807,19 @@
         $(this).val('');
       });
 
-
     })(jQuery)
   </script>
-    <!-- Replace the existing script tags with these -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="../../cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="../../cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
-
-  <script src="./js/curateddetails.js"></script>
-
-
-    <!-- Add before closing body tag -->
-  <div class="modal fade" id="packageModal" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="packageModalLabel"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script src="js/curateddetails.js"></script>
 
 </body>
 
