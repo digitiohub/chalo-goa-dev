@@ -20,381 +20,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    .about-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding: 0 80px;
-      background-color: #f5f5f5;
-    }
-
-    .section-title h2 {
-      font-size: 70px;
-    }
-
-
-    /* Left side content */
-    .content {
-      flex: 1;
-      padding: 50px;
-    }
-
-    .content h1 {
-      font-size: 60px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-
-    .content p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      border: 2px solid black;
-      color: black;
-      text-decoration: none;
-      border: 1px solid black;
-      border-radius: 6px;
-      text-align: center;
-      color: #7c838b;
-      font-weight: 700;
-      margin-top: 30px;
-    }
-
-    .btn:hover {
-      background: #ff9019;
-      border-color: #ff9019;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* Right side image */
-    .image {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .image img {
-      width: 60%;
-      height: 40%;
-    }
-
-    /* Contact Section */
-    .contact-section {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 20px;
-      overflow: hidden;
-    }
-
-    .contact-section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('images/Packages/contactbg.jpg');
-      /* Add background image */
-      background-size: cover;
-      background-position: center;
-      filter: blur(2px);
-      /* Adjust the blur level as needed */
-      z-index: -1;
-      /* Ensure the pseudo-element is behind the content */
-    }
-
-    /* Form Container */
-    .form-container {
-      background-color: #ffffff;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 900px;
-      z-index: 1;
-      /* Ensure the form container is above the pseudo-element */
-    }
-
-    /* Form Header */
-    .form-header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .form-header h2 {
-      font-size: 28px;
-      color: #333333;
-      margin-bottom: 10px;
-    }
-
-    .form-header p {
-      color: #777777;
-      font-size: 16px;
-    }
-
-    /* Form Group */
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-      color: #555555;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #cccccc;
-      border-radius: 4px;
-      font-size: 16px;
-      color: #333333;
-      transition: border-color 0.3s;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: #00aaff;
-      outline: none;
-    }
-
-    /* Submit Button */
-    .submit-btn {
-      display: inline-block;
-      padding: 12px 30px;
-      border: 2px solid black;
-      color: black;
-      text-decoration: none;
-      border: 1px solid black;
-      border-radius: 6px;
-      text-align: center;
-      color: #7c838b;
-      font-weight: 700;
-      margin-top: 30px;
-    }
-
-    .submit-btn:hover {
-      background: #ff9019;
-      border-color: #ff9019;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .form-container {
-        padding: 20px;
-      }
-    }
-
-    /* Modal Styles */
-    .modal-content {
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .modal-header {
-      border-bottom: 2px solid #ff9019;
-      background-color: #f8f9fa;
-    }
-
-    .modal-title {
-      color: #333;
-      font-weight: 700;
-    }
-
-    .modal-body {
-      padding: 25px;
-      max-height: 70vh;
-      overflow-y: auto;
-    }
-
-    .modal-body p {
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .modal-body ul {
-      padding-left: 20px;
-    }
-
-    .modal-body li {
-      margin-bottom: 10px;
-      color: #666;
-    }
-
-    .modal-footer {
-      border-top: 1px solid #dee2e6;
-    }
-
-    .modal-body strong {
-      color: #ff9019;
-    }
-
-    /* Custom scrollbar for modal */
-    .modal-body::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    .modal-body::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    .modal-body::-webkit-scrollbar-thumb {
-      background: #ff9019;
-      border-radius: 4px;
-    }
-
-    .modal-body::-webkit-scrollbar-thumb:hover {
-      background: #e67f0d;
-    }
-
-    .location-packages {
-      margin-top: 30px;
-    }
-
-    .location-box {
-      margin-bottom: 30px;
-      transition: transform 0.3s ease;
-    }
-
-    .location-box:hover {
-      transform: translateY(-5px);
-    }
-
-    .location-box figure {
-      position: relative;
-      margin: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .location-box figure img {
-      width: 350px;
-      height: auto;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .location-box figure:hover img {
-      transform: scale(1.05);
-    }
-
-    .location-box figcaption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 20px;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-      color: white;
-    }
-
-    .location-box figcaption h3 {
-      color: white;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .location-box .explore-more {
-      color: white;
-      text-decoration: none;
-      padding: 5px 15px;
-      border: 1px solid white;
-      border-radius: 4px;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-
-    .location-box .explore-more:hover {
-      background: #ff9019;
-      border-color: #ff9019;
-      color: white;
-    }
-
-    .section-title {
-      text-align: center;
-    }
-
-    .section-title h2 {
-      font-size: 54px;
-      color: #333;
-      margin-bottom: 50px;
-      /* Reduced from 60px */
-      font-weight: 600;
-    }
-
-    .section-title .location-heading {
-      font-size: 48px;
-      color: #ff9019;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin: 0 0 30px 0;
-      /* Reduced margin */
-      letter-spacing: 2px;
-    }
-
-    .popular-tours {
-      padding: 30px 0;
-      /* Reduced from default padding */
-      margin-bottom: 0;
-      /* Remove bottom margin */
-    }
-
-    .tour-box {
-      margin-bottom: 20px;
-      /* Reduced from 30px */
-    }
-  </style>
 </head>
 
 <body>
-  <div class="search-box">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> <span class="search-close-btn"><i class="fa fa-times"></i></span>
-          <h3>Make Quick Search to Find!</h3>
-          <form>
-            <div class="form-group"> <i class="fa fa-search"></i>
-              <input type="text" placeholder="Search Activities, Themes or Tours">
-            </div>
-            <!-- end form-group -->
-            <button type="submit">SEARCH</button>
-          </form>
-          <dl>
-            <dt>Suggestions <i class="fa fa-long-arrow-right"></i></dt>
-            <dd><a href="#">Adventure</a></dd>
-            <dd><a href="#">Nothern Lights</a></dd>
-            <dd><a href="#">Waterfalls</a></dd>
-            <dd><a href="#">Winter Tours</a></dd>
-            <dd><a href="#">Glaciar Walk</a></dd>
-          </dl>
-        </div>
-        <!-- end col-12 -->
-      </div>
-      <!-- end row -->
-    </div>
-    <!-- end container -->
-  </div>
-  <!-- end search-box -->
   <header class="header-int">
     <div class="container">
       <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png"
@@ -487,8 +115,8 @@
           <div class="tour-box">
             <figure><img src="images/Packages/trekking/4.jpg" alt="Image"></figure>
             <div class="tour-content">
-              <h3 class="tour-title">Bhagwan Mahavir Wildlife Sanctuary 
-              <a href="#" class="explore-more" data-package="Bhagwan Mahavir Wildlife Sanctuary ">EXPLORE MORE</a>
+              <h3 class="tour-title">Bhagwan Mahavir Wildlife Sanctuary
+                <a href="#" class="explore-more" data-package="Bhagwan Mahavir Wildlife Sanctuary ">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
@@ -525,7 +153,7 @@
           <div class="tour-box">
             <figure><img src="images/Packages/cultural/1.jpg" alt="Image"></figure>
             <div class="tour-content">
-              <h3 class="tour-title">Portuguese Colonial Legacy Tour 
+              <h3 class="tour-title">Portuguese Colonial Legacy Tour
               </h3>
               <a href="#" class="explore-more" data-package="Portuguese Colonial Legacy Tour">EXPLORE MORE</a>
             </div>
@@ -546,7 +174,7 @@
           <div class="tour-box">
             <figure><img src="images/Packages/cultural/3.jpg" alt="Image"></figure>
             <div class="tour-content">
-              <h3 class="tour-title">  Goan Culinary Heritage Expedition
+              <h3 class="tour-title"> Goan Culinary Heritage Expedition
               </h3>
               <a href="#" class="explore-more" data-package="Goan Culinary Heritage Expedition">EXPLORE MORE</a>
             </div>
@@ -587,7 +215,7 @@
           <div class="tour-box">
             <figure><img src="images/Packages/wildlife/1.jpeg" alt="Image"></figure>
             <div class="tour-content">
-              <h3 class="tour-title">Western Ghats Wilderness  </h3>
+              <h3 class="tour-title">Western Ghats Wilderness </h3>
               <a href="#" class="explore-more" data-package="Western Ghats Wilderness">EXPLORE MORE</a>
             </div>
           </div>
@@ -607,7 +235,7 @@
           <div class="tour-box">
             <figure><img src="images/Packages/wildlife/3.jpeg" alt="Image"></figure>
             <div class="tour-content">
-              <h3 class="tour-title"> Marine Discovery Expedition - Goa            </h3>
+              <h3 class="tour-title"> Marine Discovery Expedition - Goa </h3>
               <a href="#" class="explore-more" data-package="Marine Discovery Expedition - Goa ">EXPLORE MORE</a>
             </div>
           </div>
@@ -757,39 +385,39 @@
   </footer>
 
   <!-- Add before closing body tag -->
- <!-- Container for Package List -->
-<div id="package-list" class="package-list"></div>
+  <!-- Container for Package List -->
+  <div id="package-list" class="package-list"></div>
 
-<!-- Modal -->
-<div id="packageModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeModal()">&times;</span>
+  <!-- Modal -->
+  <div id="packageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
 
-    <!-- Photos Section -->
-    <div id="modal-photos" class="photos-section"></div>
+      <!-- Photos Section -->
+      <div id="modal-photos" class="photos-section"></div>
 
-    <!-- Title and Description -->
-    <h2 id="modal-title"></h2>
-    <p id="modal-description"></p>
+      <!-- Title and Description -->
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
 
-    <!-- Itinerary Section -->
-    <h3>Itinerary</h3>
-    <table class="itinerary-table">
-      <thead>
-        <tr>
-          <th>Day</th>
-          <th>Time</th>
-          <th>Activity</th>
-        </tr>
-      </thead>
-      <tbody id="modal-itinerary"></tbody>
-    </table>
+      <!-- Itinerary Section -->
+      <h3>Itinerary</h3>
+      <table class="itinerary-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody id="modal-itinerary"></tbody>
+      </table>
 
-    <!-- Package Includes -->
-    <h3>Package Includes</h3>
-    <ul id="modal-includes"></ul>
+      <!-- Package Includes -->
+      <h3>Package Includes</h3>
+      <ul id="modal-includes"></ul>
+    </div>
   </div>
-</div>
 
 
   <!-- JS FILES -->
