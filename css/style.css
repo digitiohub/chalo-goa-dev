@@ -31,7 +31,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   overflow-x: hidden;
+  -ms-overflow-style: none;
 }
+
+/* Custom Scrollbar - Black and Orange Theme */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3a2a1d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff9019;
+  border-radius: 10px;
+  border: 2px solid #3a2a1d;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7b00;
+}
+
+::-webkit-scrollbar-corner {
+  background: #3a2a1d;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff9019 #3a2a1d;
+}
+
 html {
   height: 100%;
 }

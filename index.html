@@ -13,6 +13,9 @@
   <meta name="keywords"
     content="tour, ice, trip, travel, agency, life, vacation, treking, boat, walking, climbing, transition, svg, html, css">
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
   <!-- CSS FILES -->
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/daterangepicker.css">
@@ -84,15 +87,15 @@
       height: 40%;
     }
 
-    /* Contact Section */
+    /* Enhanced Contact Section Styling */
     .contact-section {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      padding: 20px;
+      padding: 80px 20px;
       overflow: hidden;
+      /* background-color: #f9f9f9;  */
     }
 
     .contact-section::before {
@@ -103,99 +106,104 @@
       width: 100%;
       height: 100%;
       background-image: url('images/Packages/contactbg.jpg');
-      /* Add background image */
       background-size: cover;
       background-position: center;
-      filter: blur(2px);
-      /* Adjust the blur level as needed */
       z-index: -1;
-      /* Ensure the pseudo-element is behind the content */
     }
 
-    /* Form Container */
     .form-container {
-      background-color: #ffffff;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
       width: 100%;
-      max-width: 900px;
+      max-width: 1000px;
       z-index: 1;
-      /* Ensure the form container is above the pseudo-element */
+      position: relative;
     }
 
-    /* Form Header */
     .form-header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .form-header h2 {
-      font-size: 28px;
-      color: #333333;
+      font-size: 32px;
+      color: #fff;
       margin-bottom: 10px;
+      font-weight: 700;
     }
 
     .form-header p {
-      color: #777777;
+      color: #666666;
       font-size: 16px;
     }
 
-    /* Form Group */
     .form-group {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .form-group label {
       display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-      color: #555555;
+      font-size: 15px;
+      margin-bottom: 8px;
+      color: #fff;
+      font-weight: 600;
     }
 
     .form-group input,
     .form-group textarea {
       width: 100%;
-      padding: 12px;
-      border: 1px solid #cccccc;
-      border-radius: 4px;
-      font-size: 16px;
+      padding: 14px 18px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 15px;
       color: #333333;
-      transition: border-color 0.3s;
+      transition: all 0.3s ease;
+      background-color: #ffffff;
+      resize: none;
     }
 
     .form-group input:focus,
     .form-group textarea:focus {
-      border-color: #00aaff;
+      border-color: #ff9019;
+      box-shadow: 0 0 0 2px rgba(255, 144, 25, 0.1);
       outline: none;
     }
 
-    /* Submit Button */
     .submit-btn {
       display: inline-block;
-      padding: 12px 30px;
-      border: 2px solid black;
-      color: black;
-      text-decoration: none;
-      border: 1px solid black;
-      border-radius: 6px;
-      text-align: center;
-      color: #7c838b;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff9019;
+      color: #ffffff;
       font-weight: 700;
-      margin-top: 30px;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .submit-btn i {
+      margin-left: 8px;
     }
 
     .submit-btn:hover {
-      background: #ff9019;
-      border-color: #ff9019;
-      color: #fff;
-      text-decoration: none;
+      background-color: #e67e00;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 144, 25, 0.3);
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
+    /* Add responsive padding */
+    @media (max-width: 768px) {
       .form-container {
-        padding: 20px;
+        padding: 30px 20px;
+      }
+
+      .contact-section {
+        padding: 40px 15px;
       }
     }
   </style>
@@ -679,14 +687,14 @@
               <div class="swiper-slide">
                 <div class="review"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                    <h4>A truly amazing experience!</h4>
-                    <p>Safari Sutra Holidays made my travel experience truly unforgettable! Their team handled
-                      everything with professionalism and care, from booking flights and hotels to organizing unique
-                      local experiences. The itinerary was well-planned, giving me the perfect balance of adventure and
-                      relaxation.
-                    </p>
-                    <figure><img src="images/guide06.png" alt="Image"></figure>
-                    <small>Prasanth Sivaraj</small>
+                  <h4>A truly amazing experience!</h4>
+                  <p>Safari Sutra Holidays made my travel experience truly unforgettable! Their team handled
+                    everything with professionalism and care, from booking flights and hotels to organizing unique
+                    local experiences. The itinerary was well-planned, giving me the perfect balance of adventure and
+                    relaxation.
+                  </p>
+                  <figure><img src="images/guide06.png" alt="Image"></figure>
+                  <small>Prasanth Sivaraj</small>
                 </div>
                 <!-- end review -->
               </div>
@@ -770,26 +778,45 @@
     <div class="form-container">
       <div class="form-header">
         <h2>Contact Us</h2>
-        <p>Feel free to drop us a line below!</p>
+        <p>Have questions about our Goa packages? Reach out to us!</p>
       </div>
       <form action="#" method="POST">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter full name" required />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+          </div>
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter email address" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..."
+            required></textarea>
         </div>
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+        <div class="text-center">
+          <button type="submit" class="submit-btn">Send Message <i class="fa fa-paper-plane"></i></button>
         </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your Comment..." required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit →</button>
       </form>
     </div>
   </section>
@@ -896,4 +923,5 @@
   <script src="js/scripts.js"></script>
 
 </body>
+
 </html>
