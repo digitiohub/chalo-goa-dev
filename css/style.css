@@ -3088,7 +3088,7 @@ p{
   overflow: hidden;
 }
 .adventure-activities .container {
-  overflow: visible !important;
+  margin: 0;
 }
 .adventure-activities .section-desc {
   color: #393c3f;
