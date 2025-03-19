@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="zxx">
+
+<!-- Mirrored from gfxpartner.com/Frolic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 10:24:20 GMT -->
+
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Safari Sutra Holidays Private Limited</title>
+  <meta name="author" content="GFX Partner">
+  <meta name="description" content="Frolic | for Tour Operators & Travel Agencies">
+  <meta name="keywords"
+    content="tour, ice, trip, travel, agency, life, vacation, treking, boat, walking, climbing, transition, svg, html, css">
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 80px;
+      background-color: #f5f5f5;
+    }
+
+    .section-title h2 {
+      font-size: 70px;
+    }
+
+
+    /* Left side content */
+    .content {
+      flex: 1;
+      padding: 50px;
+    }
+
+    .content h1 {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .content p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid black;
+      color: black;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-align: center;
+      color: #7c838b;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Right side image */
+    .image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .image img {
+      width: 60%;
+      height: 40%;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/Packages/contactbg.jpg');
+      /* Add background image */
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      /* Adjust the blur level as needed */
+      z-index: -1;
+      /* Ensure the pseudo-element is behind the content */
+    }
+
+    /* Form Container */
+    .form-container {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1;
+      /* Ensure the form container is above the pseudo-element */
+    }
+
+    /* Form Header */
+    .form-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-header h2 {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .form-header p {
+      color: #777777;
+      font-size: 16px;
+    }
+
+    /* Form Group */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #555555;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333333;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #00aaff;
+      outline: none;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid black;
+      color: black;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-align: center;
+      color: #7c838b;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    .submit-btn:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+    }
+
+    /* Modal Styles */
+    .modal-content {
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-header {
+      border-bottom: 2px solid #ff9019;
+      background-color: #f8f9fa;
+    }
+
+    .modal-title {
+      color: #333;
+      font-weight: 700;
+    }
+
+    .modal-body {
+      padding: 25px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .modal-body p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .modal-body ul {
+      padding-left: 20px;
+    }
+
+    .modal-body li {
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .modal-footer {
+      border-top: 1px solid #dee2e6;
+    }
+
+    .modal-body strong {
+      color: #ff9019;
+    }
+
+    /* Custom scrollbar for modal */
+    .modal-body::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .modal-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    .modal-body::-webkit-scrollbar-thumb {
+      background: #ff9019;
+      border-radius: 4px;
+    }
+
+    .modal-body::-webkit-scrollbar-thumb:hover {
+      background: #e67f0d;
+    }
+
+    .location-packages {
+      margin-top: 30px;
+    }
+
+    .location-box {
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .location-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .location-box figure {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-box figure img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .location-box figure:hover img {
+      transform: scale(1.05);
+    }
+
+    .location-box figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      color: white;
+    }
+
+    .location-box figcaption h3 {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .location-box .explore-more {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      border: 1px solid white;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .location-box .explore-more:hover {
+      background: #ff9019;
+      border-color: #ff9019;
+      color: white;
+    }
+
+    .section-title {
+      text-align: center;
+    }
+
+    .section-title h2 {
+      font-size: 54px;
+      color: #333;
+      margin-bottom: 50px;
+      /* Reduced from 60px */
+      font-weight: 600;
+    }
+
+    .section-title .location-heading {
+      font-size: 48px;
+      color: #ff9019;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 30px 0;
+      /* Reduced margin */
+      letter-spacing: 2px;
+    }
+
+    .popular-tours {
+      padding: 30px 0;
+      /* Reduced from default padding */
+      margin-bottom: 0;
+      /* Remove bottom margin */
+    }
+
+    .tour-box {
+      margin-bottom: 20px;
+      /* Reduced from 30px */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="search-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> <span class="search-close-btn"><i class="fa fa-times"></i></span>
+          <h3>Make Quick Search to Find!</h3>
+          <form>
+            <div class="form-group"> <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search Activities, Themes or Tours">
+            </div>
+            <!-- end form-group -->
+            <button type="submit">SEARCH</button>
+          </form>
+          <dl>
+            <dt>Suggestions <i class="fa fa-long-arrow-right"></i></dt>
+            <dd><a href="#">Adventure</a></dd>
+            <dd><a href="#">Nothern Lights</a></dd>
+            <dd><a href="#">Waterfalls</a></dd>
+            <dd><a href="#">Winter Tours</a></dd>
+            <dd><a href="#">Glaciar Walk</a></dd>
+          </dl>
+        </div>
+        <!-- end col-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end search-box -->
+  <header class="header-int">
+    <div class="container">
+      <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png"
+            alt="Image"></a>
+        <div class="menu-btn">
+          <div class="menu-circle-wrap">
+            <div class="wave"></div>
+            <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
+              <path d="M1,26a25,25 0 1,0 50,0a25,25 0 1,0 -50,0"></path>
+            </svg>
+          </div>
+          <div class="bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+          </div>
+        </div>
+        <!-- end menu-btn -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link" href="packages.html">PACKAGES</a>
+            <ul class="dropdown-menu">
+              <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
+              <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link" href="blog.html">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- end navbar -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header -->
+  </div>
+
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Best Tour Packages</h2>
+          <h1 class="location-heading">GOA TREKKING PACKAGES</h1>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/trekking/1.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Dudhsagar Falls Adventure Trek
+              </h3>
+              <a href="#" class="explore-more" data-package="Dudhsagar Falls Adventure Trek">EXPLORE MORE</a>
+            </div>
+            <!-- end tour-content -->
+          </div>
+          <!-- end tour-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/trekking/2.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Netravali Wildlife Sanctuary Trek</h3>
+              <a href="#" class="explore-more" data-package="Netravali Wildlife Sanctuary Trek">EXPLORE MORE</a>
+            </div>
+            <!-- end tour-content -->
+          </div>
+          <!-- end tour-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/trekking/3.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Coastal Cliffs Trek - Goa
+              </h3>
+              <a href="#" class="explore-more" data-package="Coastal Cliffs Trek - Goa">EXPLORE MORE</a>
+            </div>
+            <!-- end tour-content -->
+          </div>
+          <!-- end tour-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
+          <div class="tour-box">
+            <figure><img src="images/Packages/trekking/4.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Bhagwan Mahavir Wildlife Sanctuary 
+              <a href="#" class="explore-more" data-package="Bhagwan Mahavir Wildlife Sanctuary ">EXPLORE MORE</a>
+            </div>
+            <!-- end tour-content -->
+          </div>
+          <!-- end tour-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/trekking/5.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Moonlight Trek to Chapora Fort
+              </h3>
+              <a href="#" class="explore-more" data-package="Moonlight Trek to Chapora Fort">EXPLORE MORE</a>
+            </div>
+            <!-- end tour-content -->
+          </div>
+          <!-- end tour-box -->
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+
+  </section>
+  <!-- end popular-tours -->
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h1 class="location-heading"> Goa Cultural Heritage Packages</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/cultural/1.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Portuguese Colonial Legacy Tour 
+              </h3>
+              <a href="#" class="explore-more" data-package="Portuguese Colonial Legacy Tour">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/cultural/2.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Sacred Goa Spiritual Journey </h3>
+              <a href="#" class="explore-more" data-package="Sacred Goa Spiritual Journey ">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/cultural/3.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">  Goan Culinary Heritage Expedition
+              </h3>
+              <a href="#" class="explore-more" data-package="Goan Culinary Heritage Expedition">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
+          <div class="tour-box">
+            <figure><img src="images/Packages/cultural/4.jpeg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Village Lifestyles of Goa </h3>
+              <a href="#" class="explore-more" data-package="Village Lifestyles of Goa">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/cultural/5.jpeg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Festivals of Goa Experience</h3>
+              <a href="#" class="explore-more" data-package="Festivals of Goa Experience">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h1 class="location-heading"> Goa Wildlife & Nature Packages</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/wildlife/1.jpeg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Western Ghats Wilderness  </h3>
+              <a href="#" class="explore-more" data-package="Western Ghats Wilderness">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/wildlife/2.png" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Avian Paradise: Birding Across Goa</h3>
+              <a href="#" class="explore-more" data-package="Avian Paradise: Birding Across Goa">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/wildlife/3.jpeg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Marine Discovery Expedition - Goa            </h3>
+              <a href="#" class="explore-more" data-package="Marine Discovery Expedition - Goa ">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
+          <div class="tour-box">
+            <figure><img src="images/Packages/wildlife/4.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Spice Plantation & Wellness Retreat</h3>
+              <a href="#" class="explore-more" data-package="Spice Plantation & Wellness Retreat">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/wildlife/5.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Goan Geology & Landscape Expedition</h3>
+              <a href="#" class="explore-more" data-package="Goan Geology & Landscape Expedition">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h1 class="location-heading">Goa Adventure & Active Packages</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/adventure/1.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Goa Multi-Sport Adventure</h3>
+              <a href="#" class="explore-more" data-package="Goa Multi-Sport Adventure">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/adventure/2.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Whitewater Rafting & River Adventures</h3>
+              <a href="#" class="explore-more" data-package="Whitewater Rafting & River Adventures">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/adventure/3.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title">Mountain Biking & Cycle Tours
+              </h3>
+              <a href="#" class="explore-more" data-package="Mountain Biking & Cycle Tours">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
+          <div class="tour-box">
+            <figure><img src="images/Packages/adventure/4.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Yoga & Wellness Adventure Retreat</h3>
+              <a href="#" class="explore-more" data-package="Yoga & Wellness Adventure Retreat">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="tour-box">
+            <figure><img src="images/Packages/adventure/5.jpg" alt="Image"></figure>
+            <div class="tour-content">
+              <h3 class="tour-title"> Sailing & Nautical Adventures
+              </h3>
+              <a href="#" class="explore-more" data-package="Sailing & Nautical Adventures">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <h5>ABOUT US</h5>
+          <ul class="footer-menu">
+            <li><a href="index.html">Homes</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <!-- <li><a href="blog">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <h5>PACKAGES</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Pickup Locations</a></li>
+            <li><a href="#">Terms of Payment</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Difficulty Levels</a></li>
+            <li><a href="#">Where to Find Us</a></li>
+          </ul>
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <h5>CONTACT US</h5>
+          <address>
+            <i class="fa fa-map-marker"></i> WeWork Chromium Jogeshwari <br>Link Road, Powai, Mumbai, <br>Maharashtra,
+            India
+          </address>
+          <div class="contact-info">
+            <p><i class="fa fa-envelope"></i> hello@thesafarisutra.com</p>
+            <p><i class="fa fa-envelope"></i> sales@thesafarisutra.com</p>
+            <p><i class="fa fa-phone"></i> 9967572970</p>
+            <p><i class="fa fa-phone"></i> +919429690981</p>
+          </div>
+        </div>
+        <!-- end col-3 -->
+      </div>
+      <!-- end col-3 -->
+      <div class="col-12">
+        <ul class="social-media">
+          <li><a href="https://x.com/SafariSutra"><i class="fa fa-tripadvisor"></i></a></li>
+          <li><a href="https://www.instagram.com/safarisutra/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <!-- end col-12 -->
+      <div class="col-12"> <span class="copyright">&copy; Safari Sutra Holidays</span> </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+    </div>
+    <!-- end container -->
+  </footer>
+
+  <!-- Add before closing body tag -->
+ <!-- Container for Package List -->
+<div id="package-list" class="package-list"></div>
+
+<!-- Modal -->
+<div id="packageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <!-- Photos Section -->
+    <div id="modal-photos" class="photos-section"></div>
+
+    <!-- Title and Description -->
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+
+    <!-- Itinerary Section -->
+    <h3>Itinerary</h3>
+    <table class="itinerary-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody id="modal-itinerary"></tbody>
+    </table>
+
+    <!-- Package Includes -->
+    <h3>Package Includes</h3>
+    <ul id="modal-includes"></ul>
+  </div>
+</div>
+
+
+  <!-- JS FILES -->
+  <script data-cfasync="false"
+    src="https://cdn-cgi.com/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script>
+    // PRELOADER
+    (function ($) {
+      $(window).on("load", function () {
+        $("body").addClass("page-loaded");
+      });
+
+      $(".datepicker__input").daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+
+      $('.datepicker__input').on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+      });
+
+      $('.datepicker__input').on('cancel.daterangepicker', function (ev, picker) {
+        $(this).val('');
+      });
+
+    })(jQuery)
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/curateddetails.js"></script>
+
+</body>
+
+<!-- Mirrored from gfxpartner.com/Frolic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 10:24:21 GMT -->
+
+</html>

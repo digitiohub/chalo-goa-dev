@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styles for the Package List */
+        /* Modal Styling */
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 5% auto;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Photos Section */
+.photos-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.photos-section img {
+  width: calc(33.33% - 10px);
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Day Toggle */
+.day-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.day-toggle button {
+  background-color: #ddd;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day-toggle button.active {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+/* Itinerary Table */
+.itinerary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.itinerary-table th, .itinerary-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.itinerary-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.itinerary-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Package Includes */
+#modal-includes {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#modal-includes li {
+  margin-bottom: 5px;
+}
+
+/* Read More Button */
+.read-more-btn {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #ff6347;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Container for Package List -->
+<!-- Container for Package List -->
+<div id="package-list" class="package-list"></div>
+
+<!-- Modal -->
+<div id="packageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <!-- Photos Section -->
+    <div id="modal-photos" class="photos-section"></div>
+
+    <!-- Title and Description -->
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+
+    <!-- Day Toggle Buttons -->
+    <div id="day-toggle" class="day-toggle"></div>
+
+    <!-- Itinerary Section -->
+    <h3>Itinerary</h3>
+    <table class="itinerary-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody id="modal-itinerary"></tbody>
+    </table>
+
+    <!-- Package Includes -->
+    <h3>Package Includes</h3>
+    <ul id="modal-includes"></ul>
+  </div>
+</div>
+
+
+<script src="js/test.js"></script>
+
+</body>
+</html>
