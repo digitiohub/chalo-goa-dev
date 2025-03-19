@@ -1,7 +1,7 @@
 const curatedDetails = {
-    "North Goa Beach Bliss Expedition": {
-      title: "North Goa Beach Bliss Expedition",
-      description: `
+  "North Goa Beach Bliss Expedition": {
+    title: "North Goa Beach Bliss Expedition",
+    description: `
         <p><strong>Discover the Vibrant Soul of Goa's Legendary Northern Shores</strong></p>
         <p>Experience the electric energy of North Goa's famous beaches where golden sands meet bohemian spirit. This package is perfect for travelers seeking the quintessential Goa beach experience with a perfect balance of relaxation and excitement.</p>
         <h3>Inclusions:</h3>
@@ -25,11 +25,11 @@ const curatedDetails = {
           <li>Any activities not mentioned in inclusions.</li>
         </ul>
       `
-    },
-  
-    "Hippie Trail Heritage Tour": {
-      title: "Hippie Trail Heritage Tour",
-      description: `
+  },
+
+  "Hippie Trail Heritage Tour": {
+    title: "Hippie Trail Heritage Tour",
+    description: `
         <p><strong>Follow the Footsteps of the Original Goa Wanderers</strong></p>
         <p>Immerse yourself in the legendary hippie culture that transformed Goa in the 1970s and still influences its unique vibe today.</p>
         <h3>Inclusions:</h3>
@@ -54,11 +54,11 @@ const curatedDetails = {
           <li>Travel insurance.</li>
         </ul>
       `
-    },
-  
-    "Fort to Fort North Goa Heritage Trail": {
-      title: "Fort to Fort North Goa Heritage Trail",
-      description: `
+  },
+
+  "Fort to Fort North Goa Heritage Trail": {
+    title: "Fort to Fort North Goa Heritage Trail",
+    description: `
         <p><strong>Journey Through Centuries of Maritime History and Cultural Exchange</strong></p>
         <p>Discover North Goa's magnificent forts and historical sites that tell the fascinating story of Portuguese colonization, naval battles, and cultural fusion.</p>
         <h3>Inclusions:</h3>
@@ -84,11 +84,11 @@ const curatedDetails = {
           <li>Travel insurance.</li>
         </ul>
       `
-    },
-  
-    "Nightlife Elite - Goa After Dark": {
-      title: "Nightlife Elite - Goa After Dark",
-      description: `
+  },
+
+  "Nightlife Elite - Goa After Dark": {
+    title: "Nightlife Elite - Goa After Dark",
+    description: `
         <p><strong>Experience the Legendary Nightlife That Made Goa Famous</strong></p>
         <p>Dive into North Goa's world-renowned nightlife scene with VIP access to the hottest beach clubs, bars, and dance venues.</p>
         <h3>Inclusions:</h3>
@@ -113,10 +113,10 @@ const curatedDetails = {
           <li>Travel insurance.</li>
         </ul>
       `
-    },
-    "North Goa Wellness Escape": {
-        title: "North Goa Wellness Escape",
-        description: `
+  },
+  "North Goa Wellness Escape": {
+    title: "North Goa Wellness Escape",
+    description: `
           <p><strong>Rejuvenate Mind and Body Where Spirituality Meets the Sea</strong></p>
           <p>Discover why North Goa has become a global wellness destination with this restorative package combining yoga, meditation, natural healing, and spiritual practices.</p>
           <h3>Inclusions:</h3>
@@ -141,8 +141,8 @@ const curatedDetails = {
             <li>Travel insurance.</li>
           </ul>
         `
-      },
-      "South Goa Serenity Sojourn": {
+  },
+  "South Goa Serenity Sojourn": {
     title: "South Goa Serenity Sojourn",
     description: `
       <p><strong>Escape to Pristine Beaches and Portuguese Heritage in Goa's Tranquil South</strong></p>
@@ -290,7 +290,7 @@ const curatedDetails = {
       </ul>
     `
   },
-  "Spice Plantation Immersion ": {
+  "Spice Plantation Immersion": {
     title: "Spice Plantation Immersion ",
     description: `
       <p><strong>Journey into Aromatic Paradise in Goa's Lush Eastern Highlands</strong></p>
@@ -475,8 +475,8 @@ const curatedDetails = {
     `
   },
 
-  "Palolem Beach Package": {
-    title: "Palolem Beach Package",
+  "Palolem Beach Paradise": {
+    title: "Palolem Beach Paradise",
     description: `
       <p><strong>Experience South Goa's Perfect Crescent of Golden Sand</strong></p>
       <p>Discover why Palolem Beach is consistently rated as Goa's most beautiful shoreline with this comprehensive package showcasing the perfect balance of relaxation, activities, and natural beauty that make this crescent-shaped beach world-famous.</p>
@@ -598,31 +598,31 @@ const curatedDetails = {
       </ul>
     `
   }
-  };
-    
-  
-  $(document).ready(function() {
-      // Debug log to verify jQuery is loaded
-      console.log('jQuery loaded:', typeof $ !== 'undefined');
-  
-      // Get all "EXPLORE MORE" buttons
-      $('.explore-more').on('click', function(e) {
-          e.preventDefault();
-          
-          // Debug log to verify click handler
-          console.log('Button clicked');
-          
-          const packageType = $(this).data('package');
-          const details = curatedDetails[packageType];
-          
-          if (details) {
-              $('#packageModalLabel').text(details.title);
-              $('.modal-body').html(details.description);
-              
-              // Debug log before showing modal
-              console.log('Showing modal for:', packageType);
-              
-              $('#packageModal').modal('show');
-          }
-      });
+};
+
+
+$(document).ready(function () {
+  // Debug log to verify jQuery is loaded
+  console.log('jQuery loaded:', typeof $ !== 'undefined');
+
+  // Get all "EXPLORE MORE" buttons
+  $('.explore-more').on('click', function (e) {
+    e.preventDefault();
+
+    // Debug log to verify click handler
+    console.log('Button clicked');
+
+    const packageType = $(this).data('package');
+    const details = curatedDetails[packageType];
+
+    if (details) {
+      $('#packageModalLabel').text(details.title);
+      $('.modal-body').html(details.description);
+
+      // Debug log before showing modal
+      console.log('Showing modal for:', packageType);
+
+      $('#packageModal').modal('show');
+    }
   });
+});
