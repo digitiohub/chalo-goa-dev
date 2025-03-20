@@ -2,9 +2,9 @@ const curatedDetails = {
   "North Goa Beach Bliss Expedition": {
     title: "North Goa Beach Bliss Expedition",
     description: `
-        <p><strong>Discover the Vibrant Soul of Goa's Legendary Northern Shores</strong></p>
+        <h3><strong>Discover the Vibrant Soul of Goa's Legendary Northern Shores</strong></h3>
         <p>Experience the electric energy of North Goa's famous beaches where golden sands meet bohemian spirit. This package is perfect for travelers seeking the quintessential Goa beach experience with a perfect balance of relaxation and excitement.</p>
-        <h3>Inclusions:</h3>
+        <h5>Inclusions:</h5>
         <ul>
           <li>4 nights accommodation at beachfront resort in Calangute/Baga area.</li>
           <li>Daily breakfast buffet featuring Goan specialties.</li>
@@ -16,7 +16,7 @@ const curatedDetails = {
           <li>Complimentary welcome drink and Goan spice gift pack.</li>
           <li>Airport/railway station transfers in private AC vehicle.</li>
         </ul>
-        <h3>Exclusions:</h3>
+        <h5>Exclusions:</h5>
         <ul>
           <li>Alcoholic beverages outside of specified events.</li>
           <li>Additional water sports beyond included session.</li>
@@ -30,9 +30,9 @@ const curatedDetails = {
   "Hippie Trail Heritage Tour": {
     title: "Hippie Trail Heritage Tour",
     description: `
-        <p><strong>Follow the Footsteps of the Original Goa Wanderers</strong></p>
+        <h3><strong>Follow the Footsteps of the Original Goa Wanderers</strong></h3>
         <p>Immerse yourself in the legendary hippie culture that transformed Goa in the 1970s and still influences its unique vibe today.</p>
-        <h3>Inclusions:</h3>
+        <h5>Inclusions:</h5>
         <ul>
           <li>3 nights in boutique accommodation in Anjuna/Vagator area.</li>
           <li>Daily organic breakfast with vegetarian options.</li>
@@ -45,7 +45,7 @@ const curatedDetails = {
           <li>Live music evening at legendary Curlies Beach Shack.</li>
           <li>Airport/railway station transfers in private AC vehicle.</li>
         </ul>
-        <h3>Exclusions:</h3>
+        <h5>Exclusions:</h5>
         <ul>
           <li>Personal shopping expenses.</li>
           <li>Additional meals not specified.</li>
@@ -59,9 +59,9 @@ const curatedDetails = {
   "Fort to Fort North Goa Heritage Trail": {
     title: "Fort to Fort North Goa Heritage Trail",
     description: `
-        <p><strong>Journey Through Centuries of Maritime History and Cultural Exchange</strong></p>
+        <h3><strong>Journey Through Centuries of Maritime History and Cultural Exchange</strong></h3>
         <p>Discover North Goa's magnificent forts and historical sites that tell the fascinating story of Portuguese colonization, naval battles, and cultural fusion.</p>
-        <h3>Inclusions:</h3>
+        <h5>Inclusions:</h5>
         <ul>
           <li>3 nights accommodation in heritage property or quality hotel.</li>
           <li>Daily breakfast with traditional Goan bread and filter coffee.</li>
@@ -75,7 +75,7 @@ const curatedDetails = {
           <li>All transportation in comfortable AC vehicle.</li>
           <li>Complimentary history booklet of Goan forts.</li>
         </ul>
-        <h3>Exclusions:</h3>
+        <h5>Exclusions:</h5>
         <ul>
           <li>Camera fees (if any) at monuments.</li>
           <li>Personal expenses and shopping.</li>
@@ -89,9 +89,9 @@ const curatedDetails = {
   "Nightlife Elite - Goa After Dark": {
     title: "Nightlife Elite - Goa After Dark",
     description: `
-        <p><strong>Experience the Legendary Nightlife That Made Goa Famous</strong></p>
+        <h3><strong>Experience the Legendary Nightlife That Made Goa Famous</strong></h3>
         <p>Dive into North Goa's world-renowned nightlife scene with VIP access to the hottest beach clubs, bars, and dance venues.</p>
-        <h3>Inclusions:</h3>
+        <h5>Inclusions:</h5>
         <ul>
           <li>3 nights accommodation in Baga/Calangute area.</li>
           <li>Late breakfast service accommodating night owls.</li>
@@ -104,7 +104,7 @@ const curatedDetails = {
           <li>Safe and reliable transportation between all venues.</li>
           <li>24-hour concierge service for nightlife recommendations.</li>
         </ul>
-        <h3>Exclusions:</h3>
+        <h5>Exclusions:</h5>
         <ul>
           <li>Alcoholic beverages beyond welcome drinks.</li>
           <li>Personal expenses at clubs and bars.</li>
@@ -117,9 +117,9 @@ const curatedDetails = {
   "North Goa Wellness Escape": {
     title: "North Goa Wellness Escape",
     description: `
-          <p><strong>Rejuvenate Mind and Body Where Spirituality Meets the Sea</strong></p>
+          <h3><strong>Rejuvenate Mind and Body Where Spirituality Meets the Sea</strong></h3>
           <p>Discover why North Goa has become a global wellness destination with this restorative package combining yoga, meditation, natural healing, and spiritual practices.</p>
-          <h3>Inclusions:</h3>
+          <h5>Inclusions:</h5>
           <ul>
             <li>5 nights accommodation at wellness retreat center in Assagao/Moira area.</li>
             <li>Daily vegetarian/vegan breakfast and dinner with organic ingredients.</li>
@@ -132,7 +132,7 @@ const curatedDetails = {
             <li>All transportation in eco-friendly vehicles.</li>
             <li>Wellness journal and organic herbal tea welcome gift.</li>
           </ul>
-          <h3>Exclusions:</h3>
+          <h5>Exclusions:</h5>
           <ul>
             <li>Additional spa treatments beyond included services.</li>
             <li>Personal shopping expenses.</li>
@@ -145,9 +145,9 @@ const curatedDetails = {
   "South Goa Serenity Sojourn": {
     title: "South Goa Serenity Sojourn",
     description: `
-      <p><strong>Escape to Pristine Beaches and Portuguese Heritage in Goa's Tranquil South</strong></p>
+      <h3><strong>Escape to Pristine Beaches and Portuguese Heritage in Goa's Tranquil South</strong></h3>
       <p>Experience the peaceful side of Goa with this meticulously crafted South Goa package, featuring less-crowded beaches, authentic villages, and the region's famous laid-back atmosphere that represents Goa at its most authentic.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights accommodation at premium South Goa resort.</li>
         <li>Daily breakfast buffet with local and international options.</li>
@@ -161,7 +161,7 @@ const curatedDetails = {
         <li>All transportation in comfortable AC vehicle.</li>
         <li>Airport/railway station transfers.</li>
       </ul>
-       <h3>Exclusions:</h3>
+       <h5>Exclusions:</h5>
           <ul>
            <li>Alcoholic beverages except welcome drink</li>
            <li>Additional activities beyond itinerary</li>
@@ -174,9 +174,9 @@ const curatedDetails = {
   "Colonial Heritage Expedition": {
     title: "Colonial Heritage Expedition",
     description: `
-      <p><strong>Journey Through Centuries of Portuguese Influence and Architectural Splendor</strong></p>
+      <h3><strong>Journey Through Centuries of Portuguese Influence and Architectural Splendor</strong></h3>
       <p>Immerse yourself in South Goa's rich colonial history through this heritage-focused tour showcasing magnificent churches, ancestral mansions, and cultural landmarks that tell the story of 450 years of Portuguese influence on Goan culture.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in heritage homestay or boutique hotel.</li>
         <li>Daily breakfast featuring Portuguese-Goan fusion cuisine.</li>
@@ -190,7 +190,7 @@ const curatedDetails = {
         <li>Heritage walking tour through Fontainhas, Latin Quarter of Panjim.</li>
         <li>All transportation in comfortable AC vehicle with experienced driver.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Photography fees at select monuments.</li>
         <li>Personal shopping expenses.</li>
@@ -204,9 +204,9 @@ const curatedDetails = {
   "Luxury South Goa Retreat": {
     title: "Luxury South Goa Retreat",
     description: `
-      <p><strong>Indulge in Five-Star Opulence on Goa's Most Exclusive Beaches</strong></p>
+      <h3><strong>Indulge in Five-Star Opulence on Goa's Most Exclusive Beaches</strong></h3>
       <p>Experience South Goa's sophisticated luxury with this premium package featuring lavish accommodations, personalized service, and exclusive experiences that showcase why South Goa has become India's premier destination for discerning travelers.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights in 5-star luxury resort with sea-view room.</li>
         <li>Daily gourmet breakfast with champagne option.</li>
@@ -220,7 +220,7 @@ const curatedDetails = {
         <li>Complimentary mini-bar replenished daily.</li>
         <li>Luxury airport transfers in Mercedes vehicle.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional spa treatments beyond included package.</li>
         <li>Shopping expenses at boutiques.</li>
@@ -233,9 +233,9 @@ const curatedDetails = {
   "Hidden Beaches of South Goa": {
     title: "Hidden Beaches of South Goa",
     description: `
-      <p><strong>Discover Secret Shores and Pristine Coves Known Only to Locals</strong></p>
+      <h3><strong>Discover Secret Shores and Pristine Coves Known Only to Locals</strong></h3>
       <p>Escape the crowds and explore South Goa's best-kept secrets – pristine beaches and hidden coves that remain untouched by mass tourism. This exclusive package takes you to shores that don't appear in standard guidebooks but offer the true essence of Goa's natural beauty.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in boutique beach resort.</li>
         <li>Daily breakfast with fresh tropical fruits.</li>
@@ -249,7 +249,7 @@ const curatedDetails = {
         <li>All transportation including boat transfers.</li>
         <li>Local naturalist guide specializing in coastal ecosystems.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional water sports equipment rental.</li>
         <li>Personal shopping expenses.</li>
@@ -263,9 +263,9 @@ const curatedDetails = {
   "Bird Watcher's Paradise": {
     title: "Bird Watcher's Paradise",
     description: `
-      <p><strong>Discover the Spectacular Avian Diversity of Goa's Wetlands and Forests</strong></p>
+      <h3><strong>Discover the Spectacular Avian Diversity of Goa's Wetlands and Forests</strong></h3>
       <p>Experience South Goa's remarkable biodiversity with this specialized package for bird enthusiasts, nature photographers, and wildlife lovers. Explore protected sanctuaries and wetlands home to over 400 bird species, including many rare and migratory visitors.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights accommodation in eco-lodge near Cotigao Wildlife Sanctuary.</li>
         <li>Daily breakfast and packed lunch for excursions.</li>
@@ -280,7 +280,7 @@ const curatedDetails = {
         <li>Detailed bird checklist with Goan species information.</li>
         <li>All transportation in quiet, environmentally friendly vehicles.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Professional camera equipment (bring your own).</li>
         <li>Personal expenses and snacks.</li>
@@ -293,9 +293,9 @@ const curatedDetails = {
   "Spice Plantation Immersion": {
     title: "Spice Plantation Immersion ",
     description: `
-      <p><strong>Journey into Aromatic Paradise in Goa's Lush Eastern Highlands</strong></p>
+      <h3><strong>Journey into Aromatic Paradise in Goa's Lush Eastern Highlands</strong></h3>
       <p>Discover the fragrant world of spice cultivation that has been central to Goa's economy and cuisine for centuries. This immersive package takes you deep into the verdant plantations of Eastern Goa for a sensory experience unlike any other.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in plantation homestay.</li>
         <li>All meals featuring farm-to-table spice-infused cuisine.</li>
@@ -311,7 +311,7 @@ const curatedDetails = {
         <li>Complimentary spice gift pack to take home.</li>
         <li>All transportation in comfortable AC vehicle.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Alcoholic beverages including Feni tasting (available for purchase).</li>
         <li>Personal shopping beyond complimentary gift pack.</li>
@@ -324,9 +324,9 @@ const curatedDetails = {
   "Dudhsagar Falls Package": {
     title: "Dudhsagar Falls Package",
     description: `
-      <p><strong>Conquer Eastern Goa's Most Spectacular Natural Wonder</strong></p>
+      <h3><strong>Conquer Eastern Goa's Most Spectacular Natural Wonder</strong></h3>
       <p>Experience the awe-inspiring power of India's fifth highest waterfall—the legendary Dudhsagar Falls—cascading 310 meters down the verdant Western Ghats. This adventure package combines thrilling jeep safaris, trekking, swimming, and natural exploration in eastern Goa's most dramatic landscape.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>2 nights accommodation in jungle resort near Mollem.</li>
         <li>All meals including packed lunch for excursions.</li>
@@ -341,7 +341,7 @@ const curatedDetails = {
         <li>All forest entry permits and conservation fees.</li>
         <li>Adventure photography package with digital copies.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Personal trekking equipment (good shoes recommended).</li>
         <li>Alcoholic beverages.</li>
@@ -355,9 +355,9 @@ const curatedDetails = {
   "Ancient Temples of Goa": {
     title: "Ancient Temples of Goa",
     description: `
-      <p><strong>Spiritual Journey Through Sacred Sites and Mystical Landscapes</strong></p>
+      <h3><strong>Spiritual Journey Through Sacred Sites and Mystical Landscapes</strong></h3>
       <p>Explore Eastern Goa's spiritual heritage with this carefully crafted package showcasing ancient temples, sacred groves, and religious sites that predate Portuguese colonization. Discover the deeply rooted Hindu traditions that continue to thrive throughout Goa.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in heritage property.</li>
         <li>Daily vegetarian breakfast with traditional offerings.</li>
@@ -371,7 +371,7 @@ const curatedDetails = {
         <li>Transportation to Mahadeva Temple with ancient carvings.</li>
         <li>Expert spiritual guide throughout journey.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Non-vegetarian food (not permitted for temple visits).</li>
         <li>Alcoholic beverages (not included out of respect).</li>
@@ -384,9 +384,9 @@ const curatedDetails = {
   "Wild Eastern Goa Safari": {
     title: "Wild Eastern Goa Safari",
     description: `
-      <p><strong>Discover the Untamed Wildlife Corridors of the Western Ghats</strong></p>
+      <h3><strong>Discover the Untamed Wildlife Corridors of the Western Ghats</strong></h3>
       <p>Venture into Eastern Goa's protected wilderness areas for an immersive wildlife experience showcasing the remarkable biodiversity of the Western Ghats. This package combines safari experiences, nature walks, and conservation insights for nature enthusiasts.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in wildlife lodge/resort.</li>
         <li>All meals including bush breakfasts and dinners.</li>
@@ -402,7 +402,7 @@ const curatedDetails = {
         <li>All park entrance fees and forest permits.</li>
         <li>Wildlife checklist and field guide.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Professional camera equipment.</li>
         <li>Special photography permits (if required).</li>
@@ -415,9 +415,9 @@ const curatedDetails = {
   "Eastern Goa River Expedition": {
     title: "Eastern Goa River Expedition",
     description: `
-      <p><strong>Navigate Ancient Waterways Through Goa's Verdant Heartland</strong></p>
+      <h3><strong>Navigate Ancient Waterways Through Goa's Verdant Heartland</strong></h3>
       <p>Explore Eastern Goa's pristine rivers that have served as lifelines for civilizations for centuries. This unique package combines water adventures, shoreline exploration, and cultural encounters along Goa's less-visited waterways.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights riverside accommodation in eco-cottages.</li>
         <li>All meals featuring fresh river fish and local produce.</li>
@@ -433,7 +433,7 @@ const curatedDetails = {
         <li>Expert river guides with safety training.</li>
         <li>All transportation including boat transfers.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional water sports beyond inclusions.</li>
         <li>Alcoholic beverages.</li>
@@ -446,9 +446,9 @@ const curatedDetails = {
   "Arambol Beach Wellness Retreat": {
     title: "Arambol Beach Wellness Retreat",
     description: `
-      <p><strong>Find Your Center at Goa's Most Spiritual Shoreline</strong></p>
+      <h3><strong>Find Your Center at Goa's Most Spiritual Shoreline</strong></h3>
       <p>Experience transformative wellness at Arambol Beach, internationally renowned as Goa's holistic healing hub. This thoughtfully designed package combines yoga, healing arts, and natural therapies against the backdrop of Arambol's stunning sunsets and bohemian atmosphere.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>5 nights accommodation in beachfront yoga retreat.</li>
         <li>Daily vegetarian breakfast and dinner buffet.</li>
@@ -464,7 +464,7 @@ const curatedDetails = {
         <li>Healthy cooking demonstration using local ingredients.</li>
         <li>Welcome gift of handmade mala beads.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional holistic treatments beyond inclusions.</li>
         <li>Personal crystal and jewelry purchases.</li>
@@ -478,9 +478,9 @@ const curatedDetails = {
   "Palolem Beach Paradise": {
     title: "Palolem Beach Paradise",
     description: `
-      <p><strong>Experience South Goa's Perfect Crescent of Golden Sand</strong></p>
+      <h3><strong>Experience South Goa's Perfect Crescent of Golden Sand</strong></h3>
       <p>Discover why Palolem Beach is consistently rated as Goa's most beautiful shoreline with this comprehensive package showcasing the perfect balance of relaxation, activities, and natural beauty that make this crescent-shaped beach world-famous.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights in beachfront Palolem accommodation (beach huts or resort).</li>
         <li>Daily breakfast with ocean views.</li>
@@ -495,7 +495,7 @@ const curatedDetails = {
         <li>All water sports equipment rental.</li>
         <li>Airport/railway station transfers.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Alcoholic beverages beyond welcome drink.</li>
         <li>Personal shopping expenses at beach markets.</li>
@@ -508,9 +508,9 @@ const curatedDetails = {
   "Calangute Beach Club Experience": {
     title: "Calangute Beach Club Experience",
     description: `
-      <p><strong>Live the High Life at Goa's Most Famous Beach</strong></p>
+      <h3><strong>Live the High Life at Goa's Most Famous Beach</strong></h3>
       <p>Experience the vibrant energy and legendary status of Calangute Beach—known as the "Queen of Beaches"—with this premium package combining beach club access, water sports, and the pulsating atmosphere that made North Goa internationally famous.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>3 nights accommodation in premium hotel near Calangute.</li>
         <li>Daily breakfast buffet with champagne option.</li>
@@ -525,7 +525,7 @@ const curatedDetails = {
         <li>Daily shuttle to and from main beach area.</li>
         <li>Welcome drink and fruit basket on arrival.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional alcoholic beverages beyond specified events.</li>
         <li>Personal shopping expenses.</li>
@@ -538,9 +538,9 @@ const curatedDetails = {
   "Morjim Beach Turtle Conservation Retreat": {
     title: "Morjim Beach Turtle Conservation Retreat",
     description: `
-      <p><strong>Combine Beachfront Relaxation with Meaningful Conservation</strong></p>
+      <h3><strong>Combine Beachfront Relaxation with Meaningful Conservation</strong></h3>
       <p>Experience the natural beauty of Morjim Beach while participating in the conservation of endangered Olive Ridley sea turtles that nest on this protected shoreline. This eco-conscious package balances relaxation with purpose-driven activities.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights eco-friendly accommodation near Morjim Beach.</li>
         <li>Daily organic breakfast featuring local produce.</li>
@@ -556,7 +556,7 @@ const curatedDetails = {
         <li>All transportation in eco-friendly vehicles.</li>
         <li>Donation to local turtle conservation program.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Non-seasonal turtle activities (based on nesting season).</li>
         <li>Personal expenses and souvenirs.</li>
@@ -570,9 +570,9 @@ const curatedDetails = {
   "Agonda Beach Romantic Getaway": {
     title: "Agonda Beach Romantic Getaway",
     description: `
-      <p><strong>Intimate Escapes on South Goa's Most Secluded Shore</strong></p>
+      <h3><strong>Intimate Escapes on South Goa's Most Secluded Shore</strong></h3>
       <p>Create unforgettable memories with your special someone at Agonda Beach, voted one of Asia's most romantic coastlines. This couple-focused package combines privacy, luxury, and meaningful experiences against the backdrop of Agonda's pristine shoreline.</p>
-      <h3>Inclusions:</h3>
+      <h5>Inclusions:</h5>
       <ul>
         <li>4 nights in premium beach hut or boutique resort.</li>
         <li>Daily breakfast served on your private veranda.</li>
@@ -588,7 +588,7 @@ const curatedDetails = {
         <li>Rose petal turndown service and romantic room decoration.</li>
         <li>Private airport transfers in luxury vehicle.</li>
       </ul>
-      <h3>Exclusions:</h3>
+      <h5>Exclusions:</h5>
       <ul>
         <li>Additional spa treatments beyond package.</li>
         <li>Personal shopping expenses.</li>
