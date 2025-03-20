@@ -20,6 +20,124 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 800px;
+      margin: 5% auto;
+      border-radius: 8px;
+      overflow-y: auto;
+      max-height: 85vh;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+      z-index: 10;
+      transition: color 0.3s;
+    }
+
+    .close-btn:hover {
+      color: #ff6347;
+    }
+
+    /* Photos Section */
+    .photos-section {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .photos-section img {
+      width: calc(33.33% - 10px);
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Day Toggle */
+    .day-toggle {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .day-toggle button {
+      background-color: #ddd;
+      color: #000;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .day-toggle button.active {
+      background-color: #ff7f50;
+      color: #fff;
+    }
+
+    /* Itinerary Table */
+    .itinerary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .itinerary-table th,
+    .itinerary-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .itinerary-table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    .itinerary-table tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    .itinerary-table th:first-child,
+    .itinerary-table td:first-child {
+      width: 120px;
+      /* Adjust as needed */
+      min-width: 120px;
+      max-width: 120px;
+      text-align: left;
+    }
+
+    /* Package Includes */
+    #modal-includes {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    #modal-includes li {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -47,9 +165,9 @@
           </li>
           <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
           </li>
-          <li class="nav-item dropdown"><a class="nav-link" href="packages.html">PACKAGES</a>
+          <li class="nav-item dropdown"><a class="nav-link">PACKAGES</a>
             <ul class="dropdown-menu">
-              <li><a href="packages.html">EXCLUSIVE PACKAGES</a></li>
+              <li><a href="exclusivepackages.html">EXCLUSIVE PACKAGES</a></li>
               <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
             </ul>
           </li>
@@ -68,137 +186,12 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Best Tour Packages</h2>
-          <h1 class="location-heading">GOA TREKKING PACKAGES</h1>
+          <h1 class="location-heading">Exclusive Goa Wildlife & Nature Packages: Biodiversity Discovery Journeys</h1>
         </div>
 
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking/1.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Dudhsagar Falls Adventure Trek
-              </h3>
-              <a href="#" class="explore-more" data-package="Dudhsagar Falls Adventure Trek">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking/2.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Netravali Wildlife Sanctuary Trek</h3>
-              <a href="#" class="explore-more" data-package="Netravali Wildlife Sanctuary Trek">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking/3.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Coastal Cliffs Trek - Goa
-              </h3>
-              <a href="#" class="explore-more" data-package="Coastal Cliffs Trek - Goa">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking/4.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Bhagwan Mahavir Wildlife Sanctuary
-                <a href="#" class="explore-more" data-package="Bhagwan Mahavir Wildlife Sanctuary ">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/trekking/5.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Moonlight Trek to Chapora Fort
-              </h3>
-              <a href="#" class="explore-more" data-package="Moonlight Trek to Chapora Fort">EXPLORE MORE</a>
-            </div>
-            <!-- end tour-content -->
-          </div>
-          <!-- end tour-box -->
-        </div>
-      </div>
-      <!-- end row -->
-    </div>
-    <!-- end container -->
-
-  </section>
-  <!-- end popular-tours -->
-  <section class="popular-tours">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h1 class="location-heading"> Goa Cultural Heritage Packages</h1>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/cultural/1.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Portuguese Colonial Legacy Tour
-              </h3>
-              <a href="#" class="explore-more" data-package="Portuguese Colonial Legacy Tour">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/cultural/2.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Sacred Goa Spiritual Journey </h3>
-              <a href="#" class="explore-more" data-package="Sacred Goa Spiritual Journey ">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/cultural/3.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Goan Culinary Heritage Expedition
-              </h3>
-              <a href="#" class="explore-more" data-package="Goan Culinary Heritage Expedition">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
-          <div class="tour-box">
-            <figure><img src="images/Packages/cultural/4.jpeg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Village Lifestyles of Goa </h3>
-              <a href="#" class="explore-more" data-package="Village Lifestyles of Goa">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/cultural/5.jpeg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Festivals of Goa Experience</h3>
-              <a href="#" class="explore-more" data-package="Festivals of Goa Experience">EXPLORE MORE</a>
-            </div>
-          </div>
+        <!-- Dynamic content will be inserted here by JavaScript -->
+        <div id="wildlife-package-list" class="row">
+          <!-- Packages will be loaded here -->
         </div>
       </div>
     </div>
@@ -208,57 +201,12 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h1 class="location-heading"> Goa Wildlife & Nature Packages</h1>
+          <h1 class="location-heading">Exclusive Goa Cultural Heritage Packages: Journey Through Time</h1>
         </div>
 
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/wildlife/1.jpeg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Western Ghats Wilderness </h3>
-              <a href="#" class="explore-more" data-package="Western Ghats Wilderness">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/wildlife/2.png" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Avian Paradise: Birding Across Goa</h3>
-              <a href="#" class="explore-more" data-package="Avian Paradise: Birding Across Goa">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/wildlife/3.jpeg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Marine Discovery Expedition - Goa </h3>
-              <a href="#" class="explore-more" data-package="Marine Discovery Expedition - Goa ">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
-          <div class="tour-box">
-            <figure><img src="images/Packages/wildlife/4.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Spice Plantation & Wellness Retreat</h3>
-              <a href="#" class="explore-more" data-package="Spice Plantation & Wellness Retreat">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/wildlife/5.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Goan Geology & Landscape Expedition</h3>
-              <a href="#" class="explore-more" data-package="Goan Geology & Landscape Expedition">EXPLORE MORE</a>
-            </div>
-          </div>
+        <!-- Dynamic content will be inserted here by JavaScript -->
+        <div id="cultural-package-list" class="row">
+          <!-- Packages will be loaded here -->
         </div>
       </div>
     </div>
@@ -268,63 +216,63 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h1 class="location-heading">Goa Adventure & Active Packages</h1>
+          <h1 class="location-heading">Exclusive Goa Adventure & Active Packages: Thrill-Seeker's Paradise</h1>
         </div>
 
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/adventure/1.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Goa Multi-Sport Adventure</h3>
-              <a href="#" class="explore-more" data-package="Goa Multi-Sport Adventure">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/adventure/2.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Whitewater Rafting & River Adventures</h3>
-              <a href="#" class="explore-more" data-package="Whitewater Rafting & River Adventures">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/adventure/3.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title">Mountain Biking & Cycle Tours
-              </h3>
-              <a href="#" class="explore-more" data-package="Mountain Biking & Cycle Tours">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 offset-lg-2 offset-md-2">
-          <div class="tour-box">
-            <figure><img src="images/Packages/adventure/4.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Yoga & Wellness Adventure Retreat</h3>
-              <a href="#" class="explore-more" data-package="Yoga & Wellness Adventure Retreat">EXPLORE MORE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-          <div class="tour-box">
-            <figure><img src="images/Packages/adventure/5.jpg" alt="Image"></figure>
-            <div class="tour-content">
-              <h3 class="tour-title"> Sailing & Nautical Adventures
-              </h3>
-              <a href="#" class="explore-more" data-package="Sailing & Nautical Adventures">EXPLORE MORE</a>
-            </div>
-          </div>
+        <!-- Dynamic content will be inserted here by JavaScript -->
+        <div id="adventure-package-list" class="row">
+          <!-- Packages will be loaded here -->
         </div>
       </div>
     </div>
   </section>
+
+  <section class="popular-tours">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h1 class="location-heading">Goa Trekking Packages</h1>
+        </div>
+        <!-- Dynamic content will be inserted here by JavaScript -->
+        <div id="trekking-package-list" class="row">
+          <!-- Packages will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="packageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <!-- Photos Section -->
+      <div id="modal-photos" class="photos-section"></div>
+
+      <!-- Title and Description -->
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+
+      <!-- Day Toggle Buttons -->
+      <div id="day-toggle" class="day-toggle"></div>
+
+      <!-- Itinerary Section -->
+      <h3>Itinerary</h3>
+      <table class="itinerary-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody id="modal-itinerary"></tbody>
+      </table>
+
+      <!-- Package Includes -->
+      <h3>Package Includes</h3>
+      <ul id="modal-includes"></ul>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container">
@@ -384,41 +332,6 @@
     <!-- end container -->
   </footer>
 
-  <!-- Add before closing body tag -->
-  <!-- Container for Package List -->
-  <div id="package-list" class="package-list"></div>
-
-  <!-- Modal -->
-  <div id="packageModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-
-      <!-- Photos Section -->
-      <div id="modal-photos" class="photos-section"></div>
-
-      <!-- Title and Description -->
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-
-      <!-- Itinerary Section -->
-      <h3>Itinerary</h3>
-      <table class="itinerary-table">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Activity</th>
-          </tr>
-        </thead>
-        <tbody id="modal-itinerary"></tbody>
-      </table>
-
-      <!-- Package Includes -->
-      <h3>Package Includes</h3>
-      <ul id="modal-includes"></ul>
-    </div>
-  </div>
-
 
   <!-- JS FILES -->
   <script data-cfasync="false"
@@ -432,10 +345,8 @@
   <script src="js/wow.min.js"></script>
   <script src="js/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/curateddetails.js"></script>
+  <script src="js/exclusivedetails.js"></script>
 
 </body>
-
-<!-- Mirrored from gfxpartner.com/Frolic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 10:24:21 GMT -->
 
 </html>
