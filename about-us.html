@@ -24,32 +24,36 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* Core Values Section */
-    .core-values {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
+    /* Story Section - Enhanced for Responsiveness */
     .story-section {
-      padding: 50px 200px;
+      padding: 50px 20px;
+      /* Reduce default padding */
       display: flex;
       justify-content: center;
     }
 
     .story-container {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 40px;
+      max-width: 1200px;
+      /* Control maximum width */
+      width: 100%;
+    }
+
+    .story-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
     }
 
     .story-image img {
-      width: 400px;
-      /* Smaller image width */
+      width: 100%;
+      max-width: 350px;
+      /* Maximum image width */
       height: auto;
       border-radius: 12px;
       object-fit: cover;
-      flex: 1;
     }
 
     .story-content {
@@ -75,6 +79,72 @@
       line-height: 1.6;
       color: #444;
       margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 992px) {
+      .story-section {
+        padding: 40px 20px;
+      }
+
+      .story-content h2 {
+        font-size: 32px;
+      }
+
+      .story-content p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .story-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .story-image {
+        order: 1;
+        margin: 0 auto;
+      }
+
+      .story-content {
+        order: 2;
+      }
+
+      .story-content h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .story-content h5 {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .story-section {
+        padding: 30px 15px;
+      }
+
+      .story-content h2 {
+        font-size: 24px;
+      }
+
+      .story-content p {
+        font-size: 15px;
+      }
+
+      .story-container {
+        gap: 20px;
+      }
+    }
+
+    /* Core Values Section - Enhanced Responsiveness */
+    .core-values {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     .title {
@@ -86,17 +156,22 @@
     .values-container {
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     /* Value Card Styling */
     .value-card {
-      width: 215px;
+      flex: 0 0 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      min-width: 215px;
       background-color: #f9f9f9;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
+      margin-bottom: 20px;
     }
 
     .value-card:hover {
@@ -104,75 +179,303 @@
     }
 
     .value-header {
-      padding: 10px;
+      padding: 15px 10px;
       color: #fff;
-      font-size: 20px;
       font-weight: bold;
       position: relative;
+      border-radius: 8px 8px 0 0;
     }
 
-    .value-header span {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #333;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 18px;
-    }
-
-    /* Individual Colors */
-    .teamwork {
-      background-color: #ff7043;
-    }
-
-    .vision {
-      background-color: #3a2a1d;
-    }
-
-    .responsibility {
-      background-color: #ff7043;
-    }
-
-    .ethics {
-      background-color: #3a2a1d;
-    }
-
-    .reliability {
-      background-color: #ff7043;
-    }
-
-    .excellence {
-      background-color: #3a2a1d;
+    .value-header h3 {
+      margin: 0;
+      font-size: 20px;
     }
 
     /* Value Content */
     .value-content {
       padding: 20px;
+      height: calc(100% - 50px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .icon {
       font-size: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
-    h3 {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-
-    p {
+    .value-content p {
       font-size: 16px;
       color: #666;
+      flex-grow: 1;
+      margin: 0;
     }
 
-    /* Responsive Design */
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .title {
+        font-size: 48px;
+        margin-bottom: 30px;
+      }
+
+      .value-card {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      /* 3 columns on tablet */
+      .value-card {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+      }
+
+      .title {
+        font-size: 42px;
+      }
+    }
+
     @media (max-width: 768px) {
-      .values-container {
+
+      /* 2 columns on smaller tablets and mobile */
+      .value-card {
+        flex: 0 0 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+      }
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 25px;
+      }
+
+      .value-content {
+        padding: 15px;
+      }
+
+      .icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .value-card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        min-width: 140px;
+      }
+
+      .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .value-header h3 {
+        font-size: 18px;
+      }
+
+      .value-content p {
+        font-size: 14px;
+      }
+
+      .icon {
+        font-size: 28px;
+      }
+
+      .core-values {
+        padding: 30px 15px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .value-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+
+    /* Individual Colors */
+    .teamwork,
+    .responsibility,
+    .reliability {
+      background-color: #ff7043;
+    }
+
+    .vision,
+    .ethics,
+    .excellence {
+      background-color: #3a2a1d;
+    }
+
+    /* Why Choose Chalo Goa? - Enhanced Mobile Responsive Styling */
+    .our-history {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 80px 0;
+      background: #f4fbff;
+    }
+
+    .our-history .section-title {
+      width: 100%;
+      float: left;
+      position: relative;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .our-history .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+    }
+
+    .our-history .wrapper:last-child {
+      margin-bottom: 0;
+    }
+
+    .our-history .wrapper figure {
+      flex-basis: 50%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5%;
+      padding-bottom: 25px;
+    }
+
+    .our-history .wrapper figure img {
+      width: 75%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .our-history .wrapper .content {
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .our-history .wrapper .inner {
+      display: block;
+    }
+
+    .our-history .wrapper .inner h4 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .our-history .wrapper .inner p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #444;
+      text-align: justify;
+    }
+
+    /* Media queries for responsive design */
+    @media (max-width: 992px) {
+      .our-history {
+        padding: 60px 20px;
+      }
+
+      .our-history .wrapper .content {
+        padding: 20px;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 24px;
+      }
+
+      .our-history .wrapper .inner p {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .our-history {
+        padding: 40px 15px;
+      }
+
+      /* Key change: Make all wrappers follow the same pattern for mobile */
+      .our-history .wrapper {
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      /* Always place image first, then content */
+      .our-history .wrapper figure {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .our-history .wrapper .content {
+        order: 2;
+        width: 100%;
+        padding: 0;
+      }
+
+      /* This applies to all wrappers now, including the second one */
+      .our-history .wrapper:nth-child(2) figure {
+        order: 1;
+      }
+
+      .our-history .wrapper:nth-child(2) .content {
+        order: 2;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .our-history .wrapper figure img {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .our-history {
+        padding: 30px 15px;
+      }
+
+      .our-history .wrapper {
+        margin-bottom: 30px;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .our-history .wrapper .inner p {
+        font-size: 14px;
+      }
+
+      .our-history .wrapper figure {
+        margin-bottom: 15px;
+      }
+
+      .our-history .wrapper figure img {
+        width: 100%;
       }
     }
   </style>
@@ -250,13 +553,20 @@
       <div class="story-content">
         <h5>OUR STORY</h5>
         <h2>Where Passion Meets Paradise</h2>
-        <p>Safari Sutra Holidays was founded on the belief that Goa is more than just beaches and parties—it’s a land of culture, adventure, and hidden gems waiting to be explored authentically.</p>
+        <p>Safari Sutra Holidays was founded on the belief that Goa is more than just beaches and parties—it’s a land of
+          culture, adventure, and hidden gems waiting to be explored authentically.</p>
 
-        <p>Our journey began when a group of passionate travelers uncovered Goa’s lesser-known wonders—hidden waterfalls, centuries-old temples, unmarked beaches, and a rich Indo-Portuguese heritage. Realizing most tourists only scratch the surface, we set out to create experiences beyond the ordinary.</p>
+        <p>Our journey began when a group of passionate travelers uncovered Goa’s lesser-known wonders—hidden
+          waterfalls, centuries-old temples, unmarked beaches, and a rich Indo-Portuguese heritage. Realizing most
+          tourists only scratch the surface, we set out to create experiences beyond the ordinary.</p>
 
-        <p>In 2014, Safari Sutra Holidays was born, along with our signature brand Chalo Goa, dedicated to unveiling the authentic soul of this coastal paradise. The name reflects our vision—"Safari" symbolizes discovery, while "Sutra" connects travelers to meaningful experiences.</p>
+        <p>In 2014, Safari Sutra Holidays was born, along with our signature brand Chalo Goa, dedicated to unveiling the
+          authentic soul of this coastal paradise. The name reflects our vision—"Safari" symbolizes discovery, while
+          "Sutra" connects travelers to meaningful experiences.</p>
 
-        <p>What started as adventure tours for friends soon grew into a full-fledged travel service. Today, we take pride in helping thousands—from solo adventurers to families—discover Goa through immersive, offbeat, and deeply local experiences.</p>
+        <p>What started as adventure tours for friends soon grew into a full-fledged travel service. Today, we take
+          pride in helping thousands—from solo adventurers to families—discover Goa through immersive, offbeat, and
+          deeply local experiences.</p>
 
       </div>
     </div>
@@ -451,7 +761,7 @@
   <section class="milestones" id="counter">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 pb-5">
           <div class="section-title">
             <h2>Our Approach</h2>
             <p>At Chalo Goa, we believe the journey begins long before you arrive in Goa and continues long after you
@@ -460,44 +770,44 @@
           <!-- end section-title -->
         </div>
         <!-- end col-12 -->
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 pb-5">
           <figure><img src="images/Packages/learn.png" alt="Image"></figure>
           <h5>LISTEN</h5>
           <span> We begin by understanding your dreams, preferences, and expectations for your Goa journey.
           </span>
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 pb-5">
           <figure><img src="images/Packages/craft.png" alt="Image"></figure>
           <h5>CRAFT</h5>
           <span>Our specialists design an experience that balances your wishlist with our local insights, creating the
             perfect itinerary.</span>
         </div>
         <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 pb-5">
           <figure><img src="images/Packages/connect.png" alt="Image"></figure>
           <h5>CONNECT</h5>
           <span>Before and during your trip, we ensure seamless communication and support.
           </span>
         </div>
         <!-- end col-3 -->
-        <div class="row justify-content-center" style="padding-top: 50px;">
-          <div class="col-lg-4 col-md-4 text-center milestone-item">
-            <figure><img src="images/Packages/experience.png" alt="Image"></figure>
-            <h5>EXPERIENCE</h5>
-            <span>While you're with us, we handle the logistics so you can fully immerse yourself in the magic of
-              Goa.</span>
-          </div>
-          <!-- end col-4 -->
-
-          <div class="col-lg-4 col-md-4 text-center milestone-item">
-            <figure><img src="images/Packages/remember.png" alt="Image"></figure>
-            <h5>REMEMBER</h5>
-            <span>We create moments worth remembering and mementos that capture the essence of your journey.</span>
-          </div>
-          <!-- end col-4 -->
+        <div class="row justify-content-center pb-5 d-none d-md-flex" style="padding-top: 50px;"></div>
+        <div class="col-lg-4 col-md-4 text-center milestone-item">
+          <figure><img src="images/Packages/experience.png" alt="Image"></figure>
+          <h5>EXPERIENCE</h5>
+          <span>While you're with us, we handle the logistics so you can fully immerse yourself in the magic of
+            Goa.</span>
         </div>
+        <!-- end col-4 -->
+
+        <div class="col-lg-4 col-md-4 text-center milestone-item pb-5">
+          <figure><img src="images/Packages/remember.png" alt="Image"></figure>
+          <h5>REMEMBER</h5>
+          <span>We create moments worth remembering and mementos that capture the essence of your journey.</span>
+        </div>
+        <!-- end col-4 -->
       </div>
+    </div>
 
     </div>
     <!-- end row -->

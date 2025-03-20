@@ -455,6 +455,7 @@ p{
   line-height: 34px;
   margin-top: 30px;
   margin-bottom: 0;
+  text-align: justify;
 }
 .page-title h2 {
   font-size: 70px !important;
@@ -1636,7 +1637,6 @@ p{
   -ms-flex-pack: center;
   justify-content: center;
   padding: 72px;
-  background: #fff;
 }
 .our-history .wrapper .content .inner {
   display: block;
@@ -1651,6 +1651,7 @@ p{
   height: 11px;
   display: block;
   margin-bottom: 40px;
+  border-radius: 5%;
 }
 .our-history .wrapper .content .inner p {
   font-size: 18px;
@@ -1658,6 +1659,7 @@ p{
   margin-bottom: 20px;
   font-weight: 300;
   color: #393c3f;
+  text-align: justify;
 }
 .our-history .wrapper .content .inner a {
   font-weight: 500;
@@ -1683,7 +1685,7 @@ p{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 150px 0;
+  padding: 150px 30px;
   background: #ecf4f8;
   text-align: center;
 }
@@ -1691,7 +1693,7 @@ p{
   text-align: left;
 }
 .milestones figure {
-  width: 148px;
+  width: 85px;
   display: inline-block;
   margin-bottom: 20px;
 }
