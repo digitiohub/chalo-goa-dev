@@ -146,7 +146,7 @@
 
 
 		// SLIDER
-		var menu = ['WHO WE ARE<span>OUR PASSION</span>', 'NOTHERN LIGHTS<span>SPECIAL OFFER</span>', 'BEST SELLING<span>ICE CLIMBING</span>', 'THE FAMOUS<span>HIKING TRAILS</span>'];
+		var menu = ['EXPLORE GOA<span>AUTHENTIC EXPERIENCES</span>', 'BEACH GETAWAYS<span>GOLDEN SHORES</span>', 'CULTURAL HERITAGE<span>PORTUGUESE LEGACY</span>', 'ADVENTURE TOURS<span>THRILL SEEKERS</span>'];
 		var interleaveOffset = 0.5;
 		var swiperOptions = {
 			loop: true,
