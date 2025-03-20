@@ -500,6 +500,73 @@
         padding-right: 15px;
       }
     }
+
+    /* Mobile Footer Centering */
+    @media only screen and (max-width: 767px) {
+
+      /* Center footer content */
+      .footer .col-lg-4,
+      .footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Center footer menu items */
+      .footer .footer-menu {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0;
+      }
+
+      /* Center address and contact info */
+      .footer address,
+      .footer .contact-info {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      /* Center social media icons */
+      .footer .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px auto;
+        padding-left: 0;
+        /* Remove default padding */
+      }
+
+      .footer .col-12 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+      }
+
+      /* Center copyright text */
+      .footer .copyright {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+      }
+
+      /* Fix icon alignment in centered content */
+      .footer .contact-info i,
+      .footer address i {
+        margin-right: 5px;
+        /* Optional: make icons slightly smaller on mobile */
+        font-size: 14px;
+      }
+    }
+
+    /* Make sure container has proper padding */
+    @media only screen and (max-width: 575px) {
+      .footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
   </style>
 </head>
 
