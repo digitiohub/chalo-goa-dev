@@ -68,6 +68,8 @@ body {
 
 html {
   height: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 a {
   -webkit-transition: 0.25s ease-in-out;
@@ -2691,6 +2693,7 @@ p{
   font-weight: 200;
   font-size: 20px;
   line-height: 20px;
+  text-align: justify;
 }
 .popular-destinations {
   width: 100%;
@@ -2883,6 +2886,7 @@ p{
   font-size: 27px;
   font-family: "Baloo-Semi", serif;
   margin: 9px 0 0 0;
+  text-align: center;
 }
 .tour-box .tour-content ul {
   width: 100%;

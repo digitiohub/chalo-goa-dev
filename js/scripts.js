@@ -203,37 +203,39 @@
 			if ($(this).attr("data-background")){
 				$(this).css("background-image", "url(" + $(this).data("background") + ")");
 			}
-    	});
+    		});
 
 
-		// CAROUSEL
-		var swiper2 = new Swiper('.swiper-carousel', {
-		  slidesPerView: 3,
-		  spaceBetween: 14,
-		   // Navigation arrows
-		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
-		},
-			breakpoints: {
-					1024: {
-					  slidesPerView: 3,
-					  spaceBetween: 14,
-					},
-					768: {
-					  slidesPerView: 2,
-					  spaceBetween: 14,
-					},
-					640: {
-					  slidesPerView: 1,
-					  spaceBetween: 14,
-					},
-					320: {
-					  slidesPerView: 1,
-					  spaceBetween: 0,
-					}
-				  }
-		});
+// CAROUSEL - Modified for mobile-only
+var swiper2;
+
+// Initialize Swiper only on mobile
+function initSwiper() {
+  // Check if we're on mobile (screen width less than 768px)
+  if (window.innerWidth < 768) {
+    swiper2 = new Swiper('.swiper-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 14,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  } else if (swiper2 !== undefined) {
+    // If swiper was initialized and we're now on desktop, destroy it
+    swiper2.destroy(true, true);
+    swiper2 = undefined;
+  }
+}
+
+// Run on page load
+initSwiper();
+
+// Reinitialize swiper on window resize
+window.addEventListener('resize', function() {
+  initSwiper();
+});
+
 
 		// REVIEWS
 		var swiper3 = new Swiper('.swiper-reviews', {

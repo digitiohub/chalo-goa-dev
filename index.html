@@ -25,45 +25,46 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
+    /* Updated About Section Styling */
     .about-section {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      padding: 0 80px;
+      padding: 80px 40px;
+      /* Replace fixed height with padding */
       background-color: #f5f5f5;
     }
 
     /* Left side content */
     .content {
       flex: 1;
-      padding: 50px;
+      padding: 30px;
     }
 
     .content h1 {
-      font-size: 60px;
+      font-size: 48px;
+      /* Smaller base font size */
       font-weight: bold;
       line-height: 1.2;
     }
 
     .content p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.6;
       margin: 20px 0;
+      text-align: justify;
     }
 
     .btn {
       display: inline-block;
       padding: 12px 30px;
-      border: 2px solid black;
-      color: black;
-      text-decoration: none;
       border: 1px solid black;
       border-radius: 6px;
       text-align: center;
       color: #7c838b;
       font-weight: 700;
-      margin-top: 30px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
@@ -79,12 +80,83 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
     }
 
     .image img {
       width: 60%;
-      height: 40%;
+      height: auto;
+      /* Let height adjust automatically */
+      max-width: 100%;
+      /* Ensure image doesn't overflow container */
+      border-radius: 5%;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 992px) {
+      .content h1 {
+        font-size: 36px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        padding: 60px 20px;
+      }
+
+      .content,
+      .image {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .content {
+        order: 2;
+        /* Move content below image on mobile */
+      }
+
+      .image {
+        order: 1;
+        /* Move image above content on mobile */
+      }
+
+      .image img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+
+      .content h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .btn {
+        display: block;
+        margin: 20px auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-section {
+        padding: 40px 15px;
+      }
+
+      .content h1 {
+        font-size: 28px;
+      }
+
+      .content p {
+        font-size: 15px;
+      }
+
+      .image img {
+        width: 80%;
+        margin-bottom: 20px;
+      }
     }
 
     /* Enhanced Contact Section Styling */
@@ -206,6 +278,45 @@
         padding: 40px 15px;
       }
     }
+
+    /* Desktop activities styling */
+    .activities-desktop .activity-box {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .activities-desktop .activity-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: transform 0.6s ease;
+    }
+
+    .activities-desktop .activity-box figcaption {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      bottom: 30px;
+      background: #fff;
+      padding: 15px 20px;
+      color: #212529;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+    }
+
+    .activities-desktop .activity-box:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Add some spacing between desktop activity boxes at various breakpoints */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .activities-desktop .col-md-3 {
+        margin-bottom: 30px;
+      }
+    }
   </style>
 </head>
 
@@ -250,60 +361,49 @@
     <!-- end container -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide">
           <div class="slide-inner bg-image" data-background="images/Packages/bg1.jpg">
             <div class="container">
               <h2 data-swiper-parallax="-300">Unveil the Heart of Goa with Chalo Goa!</h2>
-              <!--<a href="#" class="link" data-swiper-parallax="-100"><img src="images/arrow-link.png" alt="Image">LEARN
-                MORE</a>--!>
             </div>
             <!-- end container -->
-            </div>
-            <!-- end slide-inner -->
           </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/Packages/bg2.jpg">
-              <div class="container">
-                <h2 data-swiper-parallax="-300">Goa’s Hidden Gems Await – Chalo Goa!</h2>
-                <!--<a href="#" class="link" data-swiper-parallax="-100"><img src="images/arrow-link.png" alt="Image">LEARN
-                MORE</a>-->
-              </div>
-              <!-- end container -->
-            </div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/Packages/bg3.jpg">
-              <div class="container">
-                <h2 data-swiper-parallax="-300">Your Ultimate Goan Adventure Begins with Chalo Goa!</h2>
-                <!--<a href="#" class="link" data-swiper-parallax="-100"><img src="images/arrow-link.png" alt="Image">LEARN
-                MORE</a>-->
-              </div>
-              <!-- end container -->
-            </div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/Packages/bg4.jpg">
-              <div class="container">
-                <h2 data-swiper-parallax="-300">More Than a Trip, It’s a Goan Experience – Chalo Goa!</h2>
-                <!--<a href="#" class="link" data-swiper-parallax="-100"><img src="images/arrow-link.png" alt="Image">LEARN
-                MORE</a>-->
-              </div>
-              <!-- end container -->
-            </div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
+          <!-- end slide-inner -->
         </div>
-        <!-- end swiper-wrapper -->
-        <!-- <div class="swiper-custom-pagination"></div> -->
-        <!-- end swiper-custom-pagination -->
+        <div class="swiper-slide">
+          <div class="slide-inner bg-image" data-background="images/Packages/bg2.jpg">
+            <div class="container">
+              <h2 data-swiper-parallax="-300">Goa’s Hidden Gems Await – Chalo Goa!</h2>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end slide-inner -->
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <div class="slide-inner bg-image" data-background="images/Packages/bg3.jpg">
+            <div class="container">
+              <h2 data-swiper-parallax="-300">Your Ultimate Goan Adventure Begins with Chalo Goa!</h2>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end slide-inner -->
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <div class="slide-inner bg-image" data-background="images/Packages/bg4.jpg">
+            <div class="container">
+              <h2 data-swiper-parallax="-300">More Than a Trip, It’s a Goan Experience – Chalo Goa!</h2>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end slide-inner -->
+        </div>
+        <!-- end swiper-slide -->
       </div>
-      <!-- end swiper-container -->
+    </div>
+    <!-- end swiper-container -->
   </header>
   <!-- end header -->
 
@@ -344,25 +444,14 @@
             🌴✨
           </p>
         </div>
+      </div>
+      <div class="row justify-content-center">
         <!-- end col-6 -->
         <div class="col-lg-3">
           <div class="tour-box">
             <figure><img src="images/Packages/family.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Family Tour Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -375,19 +464,6 @@
             <figure><img src="images/Packages/camp'.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Beach Camping </h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -400,19 +476,6 @@
             <figure><img src="images/Packages/honeymoon.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Honeymoon Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -425,19 +488,6 @@
             <figure><img src="images/Packages/yoga.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Yoga Packages </h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -450,19 +500,6 @@
             <figure><img src="images/Packages/nature.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Nature Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -475,19 +512,6 @@
             <figure><img src="images/Packages/group.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Group Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="packages.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
@@ -500,27 +524,12 @@
             <figure><img src="images/Packages/trekking.jpg" alt="Image"></figure>
             <div class="tour-content">
               <h3>Trekking Packages</h3>
-              <!-- <ul>
-                <li>
-                  <div> <img src="images/icon-date.png" alt="Image"> <small>AVAILABLE</small> <span>ALL YEAR</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-time.png" alt="Image"> <small>DURATION</small> <span>3-10 DAYS</span>
-                  </div>
-                </li>
-                <li>
-                  <div> <img src="images/icon-tag.png" alt="Image"> <small>FROM</small> <span>$166.750</span> </div>
-                </li>
-              </ul> -->
               <a href="tours-single.html">EXPLORE MORE</a>
             </div>
             <!-- end tour-content -->
           </div>
           <!-- end tour-box -->
         </div>
-        <!-- end col-3 -->
-        <div class="col-12 text-center"> <a href="#" class="site-btn">LOAD MORE</a> </div>
         <!-- end col-12 -->
       </div>
       <!-- end row -->
@@ -550,8 +559,48 @@
         <!-- end col-6 -->
       </div>
       <!-- end container -->
+      <!-- Replace the current activities carousel section with this -->
       <div class="col-12">
-        <div class="activities-carousel">
+        <!-- Desktop version - visible on screens larger than 768px -->
+        <div class="activities-desktop d-none d-md-block">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="curatedpackages.html">
+                <figure class="activity-box">
+                  <img src="images/Packages/northgoa.jpg" alt="Image">
+                  <figcaption>NORTH GOA PACKAGES</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="curatedpackages.html">
+                <figure class="activity-box">
+                  <img src="images/Packages/southgoa.jpg" alt="Image">
+                  <figcaption>SOUTH GOA PACKAGES</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="curatedpackages.html">
+                <figure class="activity-box">
+                  <img src="images/Packages/eastgoa.jpg" alt="Image">
+                  <figcaption>EAST GOA PACKAGES</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="curatedpackages.html">
+                <figure class="activity-box">
+                  <img src="images/Packages/beach.jpg" alt="Image">
+                  <figcaption>BEACH-SPECIFIC PACKAGES</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile version - visible only on screens smaller than 768px -->
+        <div class="activities-carousel d-md-none">
           <div class="swiper-carousel">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -561,7 +610,6 @@
                   </figure>
                 </a>
               </div>
-              <!-- end swiper-slide -->
               <div class="swiper-slide">
                 <a href="curatedpackages.html">
                   <figure class="activity-box"> <img src="images/Packages/southgoa.jpg" alt="Image">
@@ -569,16 +617,13 @@
                   </figure>
                 </a>
               </div>
-              <!-- end swiper-slide -->
               <div class="swiper-slide">
                 <a href="curatedpackages.html">
                   <figure class="activity-box"> <img src="images/Packages/eastgoa.jpg" alt="Image">
-                    <figcaption>EAST GOA PACKAGES
-                    </figcaption>
+                    <figcaption>EAST GOA PACKAGES</figcaption>
                   </figure>
                 </a>
               </div>
-              <!-- end swiper-slide -->
               <div class="swiper-slide">
                 <a href="curatedpackages.html">
                   <figure class="activity-box"> <img src="images/Packages/beach.jpg" alt="Image">
@@ -587,7 +632,7 @@
                 </a>
               </div>
             </div>
-            <!-- end  swiper-wrapper -->
+            <!-- Navigation arrows - only for mobile -->
             <div class="swiper-button-prev">
               <div class="arrow-left"></div>
             </div>
@@ -595,9 +640,7 @@
               <div class="arrow-right"></div>
             </div>
           </div>
-          <!-- end swiper-carousel -->
         </div>
-        <!-- end activities carousel -->
       </div>
       <!-- end col-12 -->
       <!-- end col-12 -->
