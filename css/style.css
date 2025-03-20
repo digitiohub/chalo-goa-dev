@@ -1604,10 +1604,18 @@ p{
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .our-history .wrapper figure img {
-  width: 100%;
-  float: left;
+  width: 70%; /* Reduce from 100% to 80% */
+  height: auto;
+  float: none; /* Remove float to allow centering */
+  display: block; /* Make image a block element */
+  margin: 0 auto; /* Center horizontally if flex doesn't work in some browsers */
+  border-radius: 5%;
 }
 .our-history .wrapper .content {
   -webkit-box-flex: 1;
