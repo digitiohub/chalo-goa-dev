@@ -3096,6 +3096,7 @@ p{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   padding: 150px 0;
   overflow: hidden;
 }
@@ -3110,6 +3111,7 @@ p{
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .adventure-activities .activities-carousel {
   width: 100%;
