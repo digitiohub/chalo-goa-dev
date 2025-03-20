@@ -12,7 +12,7 @@
   <meta name="description" content="Frolic | for Tour Operators & Travel Agencies">
   <meta name="keywords"
     content="tour, ice, trip, travel, agency, life, vacation, treking, boat, walking, climbing, transition, svg, html, css">
-      <!-- FAVICON -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/svg+xml" href="ico/favicon.png" />
 
   <!-- CSS FILES -->
@@ -22,6 +22,344 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Enhanced Section Title Styling */
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-title h2 {
+      color: #222;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(45deg, #ff9019, #ffb067);
+    }
+
+    .section-title p {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 15px auto 0;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .section-title p {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+    }
+
+    /* Enhanced Contact Page Styles */
+    .contact-form {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    .contact-form form {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      background: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form form::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(45deg, #ff9019, #ffb067);
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      height: 60px;
+      padding: 0 20px;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      color: #333;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form input[type="text"]:focus,
+    .contact-form textarea:focus {
+      border-color: #ff9019;
+      box-shadow: 0 0 10px rgba(255, 144, 25, 0.1);
+    }
+
+    .contact-form textarea {
+      height: 140px;
+      padding: 15px 20px;
+    }
+
+    .contact-form button[type="submit"] {
+      background: linear-gradient(45deg, #ff9019, #ffb067);
+      color: white;
+      border: none;
+      padding: 14px 40px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 144, 25, 0.2);
+      margin-top: 10px;
+    }
+
+    .contact-form button[type="submit"]:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 144, 25, 0.3);
+    }
+
+    /* New Contact Info Boxes Styling */
+    .content {
+      padding: 80px 0;
+      background-color: #fff;
+    }
+
+    .contact-info-section {
+      margin-top: 30px;
+    }
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      border-radius: 16px;
+      background: #fff;
+      transition: all 0.4s ease;
+      height: 100%;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border-left: 5px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(45deg, #ff9019, #ffb067);
+    }
+
+    .contact-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-box-icon {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      border-radius: 50%;
+      background: rgba(255, 144, 25, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-box:hover .contact-box-icon {
+      background: linear-gradient(45deg, #ff9019, #ffb067);
+    }
+
+    .contact-box-icon i {
+      font-size: 28px;
+      color: #ff9019;
+      transition: all 0.3s ease;
+    }
+
+    .contact-box:hover .contact-box-icon i {
+      color: #fff;
+    }
+
+    .contact-box-content {
+      flex: 1;
+      text-align: left;
+    }
+
+    .contact-box h5 {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 18px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .contact-box h5::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: #ff9019;
+    }
+
+    .contact-box span {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+      display: block;
+      padding-top: 15px;
+    }
+
+    .contact-box span a {
+      color: #666;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin: 3px 0;
+    }
+
+    .contact-box span a:hover {
+      color: #ff9019;
+      transform: translateX(3px);
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    .social-icons li {
+      list-style: none;
+      margin: 0 10px 0 0;
+    }
+
+    .social-icons li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons li a i {
+      color: #666;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons li a:hover {
+      background: #ff9019;
+    }
+
+    .social-icons li a:hover i {
+      color: white;
+    }
+
+    @media (max-width: 767px) {
+      .contact-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .contact-box-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .contact-box-content {
+        text-align: center;
+      }
+
+      .contact-box h5::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 991px) {
+      .contact-box {
+        padding: 25px;
+      }
+
+      .section-title h2 {
+        font-size: 42px;
+      }
+
+      .contact-box-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .contact-form {
+        padding: 40px 0;
+      }
+
+      .content {
+        padding: 40px 0;
+      }
+
+      .section-title h2 {
+        font-size: 36px;
+      }
+
+      .contact-form form {
+        padding: 25px 20px;
+      }
+
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -68,126 +406,145 @@
 
 
   <section class="contact">
-    <div class="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title page-title">
-            </div>
-            <!-- end section-title -->
-          </div>
-          <!-- end col-12 -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </div>
-    <!-- end content -->
-    <!-- end map -->
-
     <section class="contact-form">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <div class="section-title">
-              <h2>Write Us a Message</h2>
+              <h2>How Can We Help You?</h2>
+              <p class="mt-3">Have questions about our tours? Get in touch with our team!</p>
             </div>
-            <!-- end section-title -->
           </div>
-          <!-- end col-12 -->
+
           <div class="col-lg-8 col-md-10">
-            <form class="row">
+            <form class="row" id="contactForm">
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Full Name*" required>
               </div>
-              <!-- end form-group -->
+
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Email Adress">
+                <input type="text" placeholder="Email Address*" required>
               </div>
-              <!-- end form-group -->
+
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Phone Number">
               </div>
-              <!-- end form-group -->
+
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Subject*" required>
               </div>
-              <!-- end form-group -->
+
               <div class="form-group col-12">
-                <textarea placeholder="Your Message"></textarea>
+                <textarea placeholder="Tell us about your travel plans or questions*" required></textarea>
               </div>
-              <!-- end form-group -->
+
               <div class="form-group col-12 text-center">
                 <button type="submit">SEND MESSAGE</button>
               </div>
-              <!-- end form-group -->
             </form>
           </div>
-          <!-- end col-8 -->
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </section>
 
     <div class="content">
       <div class="container">
-        <div class="row no-gutters">
-          <div class="col-12">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
             <div class="section-title">
-              <h2>Reach Us Out</h2>
-              <img src="images/title-seperator.png" alt="Image">
+              <h2>Connect With Us</h2>
+              <p class="mt-3">Find us through multiple communication channels</p>
             </div>
           </div>
-          <!-- end col-12 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="contact-box">
-              <figure><img src="images/Packages/location.png" alt="Image"></figure>
-              <h5>ADDRESS</h5>
-              <span> WeWork Chromium Jogeshwari Link Road, Powai, Mumbai, Maharashtra, India</span>
-            </div>
-            <!-- end contact-box -->
-          </div>
-          <!-- end col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="contact-box">
-              <figure><img src="images/Packages/mail.png" alt="Image"></figure>
-              <h5>SUPPORT CONTACT</h5>
-              <span>
-                <p>hello@thesafarisutra.com<br>sales@thesafarisutra.com</p>
-              </span>
-            </div>
-            <!-- end contact-box -->
-          </div>
-          <!-- end col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="contact-box">
-              <figure><img src="images/Packages/telephone.png" alt="Image"></figure>
-              <h5>PHONE</h5>
-              <span>9967572970<br>+919429690981 </span>
-            </div>
-            <!-- end contact-box -->
-          </div>
-          <!-- end col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="contact-box no-border">
-              <figure><img src="images/Packages/square.png" alt="Image"></figure>
-              <h5>SOCIAL</h5>
-              <ul>
-                <li><a href="https://x.com/SafariSutra"><i class="fa fa-tripadvisor"></i></a></li>
-                <li><a href="https://www.instagram.com/safarisutra/"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa fa-facebook"></i></a>
-                </li>
-              </ul>
-            </div>
-            <!-- end contact-box -->
-          </div>
-          <!-- end col-3 -->
         </div>
-        <!-- end row -->
+
+        <div class="contact-info-section">
+          <div class="row">
+            <!-- Office Address -->
+            <div class="col-lg-6 col-md-6">
+              <div class="contact-box">
+                <div class="contact-box-icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="contact-box-content">
+                  <h5>OUR OFFICE</h5>
+                  <span>
+                    WeWork Chromium Jogeshwari<br>
+                    Link Road, Powai, Mumbai,<br>
+                    Maharashtra, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Contact -->
+            <div class="col-lg-6 col-md-6">
+              <div class="contact-box">
+                <div class="contact-box-icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="contact-box-content">
+                  <h5>EMAIL US</h5>
+                  <span>
+                    <a href="mailto:hello@thesafarisutra.com">hello@thesafarisutra.com</a><br>
+                    <a href="mailto:sales@thesafarisutra.com">sales@thesafarisutra.com</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Contact -->
+            <div class="col-lg-6 col-md-6">
+              <div class="contact-box">
+                <div class="contact-box-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="contact-box-content">
+                  <h5>CALL US</h5>
+                  <span>
+                    <a href="tel:9967572970">+91 9967572970</a><br>
+                    <a href="tel:+919429690981">+91 9429690981</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-lg-6 col-md-6">
+              <div class="contact-box">
+                <div class="contact-box-icon">
+                  <i class="fa fa-share-alt"></i>
+                </div>
+                <div class="contact-box-content">
+                  <h5>FOLLOW US</h5>
+                  <ul class="social-icons">
+                    <li>
+                      <a href="https://x.com/SafariSutra" target="_blank">
+                        <i class="fa fa-tripadvisor"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/safarisutra/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/company/103599001/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=61560936836457" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- end container -->
     </div>
     <!-- end content -->
   </section>
