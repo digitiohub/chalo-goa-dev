@@ -200,9 +200,23 @@
       align-items: center;
     }
 
-    .icon {
+    .value-content .icon {
       font-size: 40px;
       margin-bottom: 15px;
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 144, 25, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: all 0.3s ease;
+    }
+
+    .value-content .icon i {
+      font-size: 36px;
+      color: #ff7043;
     }
 
     .value-content p {
@@ -210,6 +224,11 @@
       color: #666;
       flex-grow: 1;
       margin: 0;
+    }
+
+    .value-card:hover .value-content .icon {
+      background: rgba(255, 144, 25, 0.2);
+      transform: translateY(-5px);
     }
 
     /* Responsive adjustments */
@@ -294,6 +313,18 @@
       .value-card {
         flex: 0 0 100%;
         max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .value-content .icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+
+      .value-content .icon i {
+        font-size: 28px;
       }
     }
 
@@ -476,6 +507,89 @@
 
       .our-history .wrapper figure img {
         width: 100%;
+      }
+    }
+
+    /* Milestone section improvements */
+    .milestones {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .milestones figure {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .milestones img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .milestone-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .milestone-item h5 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 15px 0 10px;
+      color: #333;
+    }
+
+    .milestone-item span {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .milestone-row {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    /* For better spacing between rows */
+    .milestone-row:first-of-type {
+      margin-bottom: 20px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .milestones {
+        padding: 40px 0;
+      }
+
+      .milestone-item {
+        margin-bottom: 30px;
+      }
+
+      .milestone-item span {
+        max-width: 100%;
+      }
+
+      .milestones .section-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .milestones .section-title h2 {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 30px;
       }
     }
 
@@ -664,28 +778,31 @@
   <section class="core-values">
     <h2 class="title">OUR VALUES</h2>
     <div class="values-container">
-      <!-- Teamwork -->
+      <!-- Authenticity -->
       <div class="value-card">
         <div class="value-header teamwork">
           <h3>Authenticity</h3>
         </div>
         <div class="value-content">
-          <div class="icon">✅</div>
+          <div class="icon">
+            <i class="fa fa-certificate"></i>
+          </div>
           <p>We showcase the real Goa beyond the tourist façade, creating genuine connections between travelers and
             destinations.</p>
         </div>
       </div>
 
-      <!-- Vision -->
+      <!-- Personalization -->
       <div class="value-card">
         <div class="value-header vision">
           <h3>Personalization</h3>
         </div>
         <div class="value-content">
-          <div class="icon">🏷️</div>
+          <div class="icon">
+            <i class="fa fa-user-circle"></i>
+          </div>
           <p>No two travelers are alike, so no two Chalo Goa experiences should be identical. We tailor each journey to
-            your specific interests and needs.
-          </p>
+            your specific interests and needs.</p>
         </div>
       </div>
 
@@ -695,48 +812,52 @@
           <h3>Responsibility</h3>
         </div>
         <div class="value-content">
-          <div class="icon">🌍</div>
+          <div class="icon">
+            <i class="fa fa-leaf"></i>
+          </div>
           <p>We practice and promote sustainable tourism that respects and preserves Goa's natural environment and
             cultural heritage.</p>
         </div>
       </div>
 
-      <!-- Ethics -->
+      <!-- Community -->
       <div class="value-card">
         <div class="value-header ethics">
           <h3>Community</h3>
         </div>
         <div class="value-content">
-          <div class="icon">🤝</div>
+          <div class="icon">
+            <i class="fa fa-users"></i>
+          </div>
           <p>We believe in tourism that benefits local communities through employment, cultural exchange, and economic
-            support.
-          </p>
+            support.</p>
         </div>
       </div>
 
-      <!-- Reliability -->
+      <!-- Safety -->
       <div class="value-card">
         <div class="value-header reliability">
           <h3>Safety</h3>
         </div>
         <div class="value-content">
           <div class="icon">
-            🛡️ </div>
+            <i class="fa fa-shield"></i>
+          </div>
           <p>Adventure doesn't mean compromise on safety. Our experienced guides and carefully vetted activities ensure
-            peace of mind.
-          </p>
+            peace of mind.</p>
         </div>
       </div>
 
+      <!-- Excellence -->
       <div class="value-card">
         <div class="value-header excellence">
           <h3>Excellence</h3>
         </div>
         <div class="value-content">
           <div class="icon">
-            💯</div>
-          <p>From first inquiry to fond farewell, we strive for exceptional service that exceeds expectations.
-          </p>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>From first inquiry to fond farewell, we strive for exceptional service that exceeds expectations.</p>
         </div>
       </div>
     </div>
@@ -834,52 +955,47 @@
             <p>At Chalo Goa, we believe the journey begins long before you arrive in Goa and continues long after you
               leave. Our approach follows a simple philosophy</p>
           </div>
-          <!-- end section-title -->
         </div>
-        <!-- end col-12 -->
-        <div class="col-lg-4 col-md-4 pb-5">
-          <figure><img src="images/Packages/learn.png" alt="Image"></figure>
-          <h5>LISTEN</h5>
-          <span> We begin by understanding your dreams, preferences, and expectations for your Goa journey.
-          </span>
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4 pb-5">
-          <figure><img src="images/Packages/craft.png" alt="Image"></figure>
-          <h5>CRAFT</h5>
-          <span>Our specialists design an experience that balances your wishlist with our local insights, creating the
-            perfect itinerary.</span>
-        </div>
-        <!-- end col-3 -->
-        <div class="col-lg-4 col-md-4 pb-5">
-          <figure><img src="images/Packages/connect.png" alt="Image"></figure>
-          <h5>CONNECT</h5>
-          <span>Before and during your trip, we ensure seamless communication and support.
-          </span>
-        </div>
-        <!-- end col-3 -->
-        <div class="row justify-content-center pb-5 d-none d-md-flex" style="padding-top: 50px;"></div>
-        <div class="col-lg-4 col-md-4 text-center milestone-item">
-          <figure><img src="images/Packages/experience.png" alt="Image"></figure>
-          <h5>EXPERIENCE</h5>
-          <span>While you're with us, we handle the logistics so you can fully immerse yourself in the magic of
-            Goa.</span>
-        </div>
-        <!-- end col-4 -->
 
-        <div class="col-lg-4 col-md-4 text-center milestone-item pb-5">
-          <figure><img src="images/Packages/remember.png" alt="Image"></figure>
-          <h5>REMEMBER</h5>
-          <span>We create moments worth remembering and mementos that capture the essence of your journey.</span>
+        <!-- First Row -->
+        <div class="row justify-content-center milestone-row">
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/learn.png" alt="Image"></figure>
+            <h5>LISTEN</h5>
+            <span>We begin by understanding your dreams, preferences, and expectations for your Goa journey.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/craft.png" alt="Image"></figure>
+            <h5>CRAFT</h5>
+            <span>Our specialists design an experience that balances your wishlist with our local insights, creating the
+              perfect itinerary.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/connect.png" alt="Image"></figure>
+            <h5>CONNECT</h5>
+            <span>Before and during your trip, we ensure seamless communication and support.</span>
+          </div>
         </div>
-        <!-- end col-4 -->
+
+        <!-- Second Row - Centered -->
+        <div class="row justify-content-center milestone-row">
+          <div class="col-lg-4 col-md-4 text-center milestone-item">
+            <figure><img src="images/Packages/experience.png" alt="Image"></figure>
+            <h5>EXPERIENCE</h5>
+            <span>While you're with us, we handle the logistics so you can fully immerse yourself in the magic of
+              Goa.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 text-center milestone-item">
+            <figure><img src="images/Packages/remember.png" alt="Image"></figure>
+            <h5>REMEMBER</h5>
+            <span>We create moments worth remembering and mementos that capture the essence of your journey.</span>
+          </div>
+        </div>
       </div>
     </div>
-
-    </div>
-    <!-- end row -->
-    </div>
-    <!-- end container -->
   </section>
   <!-- end milestones -->
   <section class="quote bg-image" data-background="images/Packages/aboutbg.jpg">
@@ -960,8 +1076,6 @@
   </footer>
 
   <!-- JS FILES -->
-  <script data-cfasync="false"
-    src="https://cdn-cgi.com/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/moment.min.js"></script>
   <script src="js/daterangepicker.min.js"></script>
