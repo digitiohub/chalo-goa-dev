@@ -6008,21 +6008,13 @@ p{
   padding: 0;
   position: relative;
 }
-.footer .social-media:before {
-  content: "";
-  width: 75%;
-  height: 1px;
-  background: #ecf4f8;
-  position: absolute;
-  top: 15px;
-}
+
 .footer .social-media li {
   float: right;
   margin: 0;
-  padding: 0 10px;
+  padding: 10px;
   list-style: none;
   background: #fff;
-  margin-top: -10px;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
@@ -6038,26 +6030,26 @@ p{
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-.footer .social-media li a:hover i[class="fa fa-facebook"] {
+.footer .social-media li a:hover i[class="fa-brands fa-facebook"] {
   color: #3b5998;
 }
-.footer .social-media li a:hover i[class="fa fa-linkedin"] {
+.footer .social-media li a:hover i[class="fa-brands fa-linkedin-in"] {
   color: #00acee;
 }
-.footer .social-media li a:hover i[class="fa fa-instagram"] {
+.footer .social-media li a:hover i[class="fa-brands fa-instagram"] {
   color: #3f729b;
 }
 .footer .social-media li a:hover i[class="fa fa-youtube-play"] {
   color: #c4302b;
 }
-.footer .social-media li a:hover i[class="fa fa-tripadvisor"] {
-  color: #00af87;
+.footer .social-media li a:hover i[class="fa-brands fa-x-twitter"] {
+  color: black;
 }
 .footer .copyright {
   width: 100%;
   float: left;
   color: #7c838b;
-  font-size: 14px;
+  font-size: 20px;
 }
 .footer .contact-info p {
   color: #7c838b;
